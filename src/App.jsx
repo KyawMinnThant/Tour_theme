@@ -1,12 +1,11 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
+import Path from "./routes/Path";
 
 const App = () => {
   return (
     <div>
-      <Routes>
-        <Route />
-      </Routes>
+     <Path/>
     </div>
   );
 };
