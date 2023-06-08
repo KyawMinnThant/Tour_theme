@@ -1,5 +1,27 @@
 
+/* about */
 
+.overlay-about{
+    opacity: 0;
+    background: rgba(0,0,0,.5);
+    height: 312.11px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transition: opacity 300ms;
+    -moz-transition: opacity 300ms;
+    -o-transition: opacity 300ms;
+    -webkit-transition: opacity 300ms;
+}
+
+.overlay-about:hover{
+    opacity: 1;
+}
+
+
+/* footer  */
 .footer-overlay{
     position: absolute;
     left: 0px;
