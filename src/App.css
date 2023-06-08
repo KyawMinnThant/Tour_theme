@@ -1,1 +1,12 @@
-@import "../node_modules/bootstrap/dist/css/bootstrap.min.css"
+
+
+.footer-overlay{
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0;
+    bottom: 0;
+    background: #000;
+    opacity: .6;
+    z-index: 0;
+}
