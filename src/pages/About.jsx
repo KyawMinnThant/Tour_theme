@@ -1,5 +1,18 @@
 import React, { useRef, useState }  from 'react'
 import { AiFillCheckCircle } from "react-icons/ai";
+import WOW from 'wow.js';
+
+
+//wow js
+const wowjs =  new WOW({
+    boxClass:     'wow',      // default
+    animateClass: 'animate__animated', // default
+    offset:       0,          // default
+    mobile:       true,       // default
+    live:         true        // default
+})
+
+wowjs.init();
 
 const teamMember = [
     {
@@ -32,7 +45,7 @@ const teamMember = [
         title: 'JAMES SMITH',
         field: 'Chief Technology Officer'
     }
-]
+];
 
 const About = () => {
 
@@ -145,6 +158,7 @@ const About = () => {
         </div>
         <div className=' px-10 md:px-20 pt-20 pb-10 md:pb-0 bg-about-pair'>
 
+            <div className='wow animate__fadeInRight'>
             <p className=' text-3xl lg:text-4xl font-bold text-gray-800'>Pharetra Etiam Inceptos</p>
             <p className=' text-xl text-slate-500 py-8'>Etiam porta sem malesuada magna mollis euismod. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Maecenas faucibus mollis interdum. Donec id elit non mi porta gravida at eget metus. Aenean lacinia.</p>
             <div className=' grid grid-cols-1 md:grid-cols-2'>
@@ -185,12 +199,14 @@ const About = () => {
                     </div>
                 </div>
             </div>
+            </div>
 
         </div>
     </div>
 
     <div className=' grid grid-cols-1 md:grid-cols-2'>
         <div className=' px-10 md:px-28 py-10 bg-about-pair'>
+            <div className=' wow animate__fadeInLeft'>
             <p className=' text-3xl font-bold'>About Services</p>
             <div>
                 <p className=' text-slate-500 text-xl pt-7'>Etiam porta sem malesuada magna mollis euismod. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
@@ -198,24 +214,25 @@ const About = () => {
                 <p className=' text-slate-500 text-xl'>Maecenas faucibus mollis interdum. Donec id elit non mi porta gravida at eget metus. Aenean lacinia. Donec ullamcorper nulla non metus auctor fringilla. Donec ullamcorper nulla non metus auctor fringilla. Aenean eu leo quam. Pellentesque ornare sem lacinia quam</p>
             </div>
             <button className=' bg-slate-950 text-white px-5 py-3 rounded mt-8'>Get A Quote</button>
+            </div>
         </div>
         <div className=' bg-about-bg-black text-white'>
             <div className=' grid grid-cols-1 px-16 py-10'>
-                <div className=' flex items-center gap-8'>
+                <div className=' flex items-center gap-8 wow animate__fadeInRight'>
                     <img className='w-[50px]' src={'https://a6e8z9v6.stackpathcdn.com/traveltour/wp-content/uploads/2016/09/icon-1.png'} alt="" />
                     <div>
                         <p className=' text-2xl font-semibold'>Ornare Quam Justo Tellusv</p>
                         <p>Maecenas faucibus mollis interdum. Donec id elit non mi porta gravida at eget metus. Aenean lacinia. </p>
                     </div>
                 </div>
-                <div className=' flex items-center gap-8 my-10'>
+                <div className=' flex items-center gap-8 my-10 wow animate__fadeInRight'>
                     <img className='w-[75px]' src={'https://a6e8z9v6.stackpathcdn.com/traveltour/wp-content/uploads/2016/09/icon-2.png'} alt="" />
                     <div>
                         <p className=' text-2xl font-semibold'>Ornare Quam Justo Tellusv</p>
                         <p>Maecenas faucibus mollis interdum. Donec id elit non mi porta gravida at eget metus. Aenean lacinia. </p>
                     </div>
                 </div>
-                <div className=' flex items-center gap-8'>
+                <div className=' flex items-center gap-8 wow animate__fadeInRight'>
                     <img className='w-[75px]' src={'https://a6e8z9v6.stackpathcdn.com/traveltour/wp-content/uploads/2016/09/icon-3.png'} alt="" />
                     <div>
                         <p className=' text-2xl font-semibold'>Ornare Quam Justo Tellusv</p>
