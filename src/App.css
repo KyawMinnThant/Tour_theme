@@ -1,34 +1,49 @@
-
 /* about */
 
-.overlay-about{
-    opacity: 0;
-    background: rgba(0,0,0,.5);
-    height: 312.11px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    transition: opacity 300ms;
-    -moz-transition: opacity 300ms;
-    -o-transition: opacity 300ms;
-    -webkit-transition: opacity 300ms;
+.overlay-about {
+  opacity: 0;
+  background: rgba(0, 0, 0, 0.5);
+  height: 312.11px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transition: opacity 300ms;
+  -moz-transition: opacity 300ms;
+  -o-transition: opacity 300ms;
+  -webkit-transition: opacity 300ms;
 }
 
-.overlay-about:hover{
-    opacity: 1;
+.overlay-about:hover {
+  opacity: 1;
 }
-
 
 /* footer  */
-.footer-overlay{
-    position: absolute;
-    left: 0px;
-    right: 0px;
-    top: 0;
-    bottom: 0;
-    background: #000;
-    opacity: .6;
-    z-index: 0;
+.footer-overlay {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 0;
+  bottom: 0;
+  background: #000;
+  opacity: 0.6;
+  z-index: 0;
+}
+
+/* destination */
+.card {
+  background: transparent;
+  transition: 0.3s;
+}
+
+.card:hover {
+  background: #00000098;
+}
+
+.line:hover {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
 }
