@@ -15,6 +15,10 @@ export default {
         'about-main': "url('https://a6e8z9v6.stackpathcdn.com/traveltour/wp-content/themes/traveltour/images/page-title-background.jpg')",
         'about-par': "url('https://a6e8z9v6.stackpathcdn.com/traveltour/wp-content/uploads/2016/06/shutterstock_74901229.jpg')",
         // about end
+
+        //service start
+        'service-middle': "url('https://a6e8z9v6.stackpathcdn.com/traveltour/wp-content/uploads/2016/06/section-bg-3.jpg')",
+        //service end
         
         // footer start
         'africa' : "url('https://a6e8z9v6.stackpathcdn.com/traveltour/wp-content/uploads/2017/01/shutterstock_120562819-600x600.jpg')",
