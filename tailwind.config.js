@@ -38,9 +38,13 @@ export default {
         //footer end
       },
       fontFamily: {
-        sans: ["Poppins, sans-serif"],
+        popp: ["Poppins, sans-serif"],
+      },
+      colors: {
+        custom: "#8C8C8C",
+        whyBookUsBg: "#f5f5f5",
       },
     },
+    plugins: [],
   },
-  plugins: [],
 };
