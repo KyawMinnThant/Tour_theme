@@ -82,12 +82,11 @@ const Destinations = () => {
                         <p className=" text-blue-500">{place.tours} tours</p>
                       </div>
                       <div>
-                        <a
-                          onClick={nav(`/tour-destination/${place.link}`)}
-                          className="text-blue-500 font-bold text-xs cursor-pointer"
-                        >
-                          <Link>VIEW ALL TOURS</Link>
-                        </a>
+                        <Link to={`/tour-destination/${place.link}`}>
+                          <a className="text-blue-500 font-bold text-xs cursor-pointer">
+                            VIEW ALL TOURS
+                          </a>
+                        </Link>
                         <div className=" h-1 bg-blue-500 invisible hover:visible"></div>
                       </div>
                     </div>
