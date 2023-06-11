@@ -70,7 +70,7 @@ const Destinations = () => {
                   }}
                 >
                   {/* <img className="" src={place?.src} alt="" /> */}
-                  <div className="h-[516px] md:h-[416px] pt-[470px] md:pt-[370px] hover:pt-[430px] hover:md:pt-[340px] card relative">
+                  <div className="h-[516px] md:h-[416px] pt-[470px] md:pt-[370px] hover:pt-[430px] hover:md:pt-[330px] card relative hover:border-b-4 hover:border-blue-500">
                     <div className="mx-[20px]">
                       <div className=" flex justify-between mb-[15px]">
                         <p className=" flex justify-start items-center gap-1 text-lg text-white font-bold">
@@ -79,13 +79,12 @@ const Destinations = () => {
                         </p>
                         <p className=" text-blue-500">{place.tours} tours</p>
                       </div>
-                      <div>
+                      <div className="">
                         <Link to={`/tour-destination/${place.link}`}>
                           <a className="text-blue-500 font-bold text-xs cursor-pointer">
                             VIEW ALL TOURS
                           </a>
                         </Link>
-                        <div className=" h-1 bg-blue-500 invisible hover:visible"></div>
                       </div>
                     </div>
                   </div>
