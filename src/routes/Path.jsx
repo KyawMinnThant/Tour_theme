@@ -16,6 +16,7 @@ import Asia from "../pages/destinations/Asia";
 import EasternEurope from "../pages/destinations/EasternEurope";
 import Europe from "../pages/destinations/Europe";
 import SouthAmerica from "../pages/destinations/SouthAmerica";
+import TourList from "../pages/TourList";
 
 const Path = () => {
   return (
@@ -28,6 +29,7 @@ const Path = () => {
         <Route path="/contact" element={<Contact />} />
         <Route path="/about" element={<About />} />
         <Route path="/service" element={<Service />} />
+        <Route path="/tour-list" element={<TourList />} />
 
         {/* destinations */}
         <Route path="/tour-destination/africa" element={<Africa />} />

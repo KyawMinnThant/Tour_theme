@@ -47,3 +47,18 @@
   left: 0px;
   right: 0px;
 }
+
+/* tour-list page */
+.custom-select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding-right: 20px; /* Adjust the value to align the icon properly */
+}
+
+.custom-select::-ms-expand {
+  display: none; /* Remove the default arrow icon in Internet Explorer */
+}
+
+.date-input::-webkit-calendar-picker-indicator {
+}
