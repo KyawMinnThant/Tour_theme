@@ -1,0 +1,9 @@
+#main:hover #showingview {
+  display: block;
+  opacity: 60%;
+  cursor: pointer;
+}
+
+.main {
+  transition: 2s;
+}
