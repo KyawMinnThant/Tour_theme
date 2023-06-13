@@ -3,6 +3,14 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+
+      lineHeight: {
+        "extra-loose": "1.2",
+      },
+      fontFamily: {
+        sans: ["Poppins", "sans-serif"],
+      },
+
       backgroundColor: {
         // about start
         "about-pair": "#e1e1e1",
@@ -10,10 +18,15 @@ export default {
         //about end
       },
 
+
       backgroundImage: {
         // about start
         "about-main":
           "url('https://a6e8z9v6.stackpathcdn.com/traveltour/wp-content/themes/traveltour/images/page-title-background.jpg')",
+
+      }
+    },
+
         "about-par":
           "url('https://a6e8z9v6.stackpathcdn.com/traveltour/wp-content/uploads/2016/06/shutterstock_74901229.jpg')",
         // about end
@@ -46,5 +59,6 @@ export default {
       },
     },
     plugins: [],
+
   },
 };
