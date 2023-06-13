@@ -8,12 +8,12 @@ import { Menu, rem } from "@mantine/core";
 import WOW from "wow.js";
 import "../css/navdrop.css";
 import "animate.css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-import "swiper/css/scrollbar";
-import "swiper/css/autoplay";
-import "swiper/css/effect-fade";
-import "swiper/css";
+// import "swiper/css/navigation";
+// import "swiper/css/pagination";
+// import "swiper/css/scrollbar";
+// import "swiper/css/autoplay";
+// import "swiper/css/effect-fade";
+// import "swiper/css";
 import {
   BsFillTelephoneFill,
   BsTwitter,
@@ -337,7 +337,7 @@ const Navbar = ({ modal, setModal }) => {
           </div>
         </div>
       </div>
-      <Swiper
+      {/* <Swiper
         modules={[Navigation, Pagination, Autoplay, EffectFade]}
         spaceBetween={50}
         slidesPerView={1}
@@ -385,7 +385,7 @@ const Navbar = ({ modal, setModal }) => {
           </SwiperSlide>
         ))}
         ...
-      </Swiper>
+      </Swiper> */}
       {/* Services */}
       {clickhover === true && <Dropdown />}
       {tourhover === true && <Tourdropdown />}
