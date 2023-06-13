@@ -1,4 +1,4 @@
-import  React,{ useState } from "react";
+import React, { useState } from "react";
 import { Route, Routes } from "react-router-dom";
 import Dashboard from "../pages/Dashboard";
 import Navbar from "../components/Navbar";
