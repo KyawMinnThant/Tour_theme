@@ -1,7 +1,9 @@
 import React, { useRef, useState } from "react";
 import { AiFillCheckCircle } from "react-icons/ai";
 import WOW from "wow.js";
+
 import { Parallax } from "react-parallax";
+
 
 //wow js
 const wowjs = new WOW({
@@ -50,8 +52,10 @@ const teamMember = [
 const About = () => {
   const refSocial = useRef();
   const refProduct = useRef();
+
   let [social, setSocial] = useState(0);
   let [product, setProduct] = useState(0);
+
 
 
   return (
@@ -184,13 +188,23 @@ const About = () => {
       </div>
 
       <div className=" grid grid-cols-1 md:grid-cols-2 relative">
+
+        <div className="w-full h-[360px] md:h-[925px] lg:h-[690.238px] bg-fixed overflow-hidden">
+          <img
+            ref={refTran}
+            style={{ transform: `translate(0px, ${tran}px)` }}
+            className="h-full w-full bg-cover bg-center"
+            src="https://a6e8z9v6.stackpathcdn.com/traveltour/wp-content/uploads/2016/06/shutterstock_74901229.jpg"
+            alt=""
+          />
+        </div>
+
         <Parallax
           bgImage="https://a6e8z9v6.stackpathcdn.com/traveltour/wp-content/uploads/2016/06/shutterstock_74901229.jpg"
           strength={200}
         >
           <div className="w-full h-[360px] md:h-[925px] lg:h-[690.238px]"></div>
         </Parallax>
-
 
         <div className=" px-10 md:px-20 pt-20 pb-10 md:pb-0 bg-about-pair">
           <div className="wow animate__fadeInRight">

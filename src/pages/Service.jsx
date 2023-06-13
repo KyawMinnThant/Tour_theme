@@ -1,4 +1,6 @@
-import React from "react";
+
+import React, { useRef, useState } from "react";
+
 import { FaRegLightbulb, FaRegCreditCard } from "react-icons/fa";
 import { RiDownloadCloud2Line } from "react-icons/ri";
 import { CiClock2 } from "react-icons/ci";
@@ -45,7 +47,12 @@ const cards = [
   },
 ];
 
+
+
+
+
 const Service = () => {
+
 
   return (
     <>
@@ -57,6 +64,7 @@ const Service = () => {
           A small river named Duden flows by their place.
         </p>
       </div>
+
 
       <div className=" lg:h-[500.238px] grid grid-cols-1 md:grid-cols-2 relative">
         <Parallax
@@ -91,6 +99,7 @@ const Service = () => {
             </p>
             <p className=" text-3xl lg:text-4xl font-bold text-gray-800">
               Our Top Missions
+
             </p>
             <p className=" text-xl text-slate-500 py-8">
               A wonderful serenity has taken possession of my entire soul, like
@@ -102,6 +111,7 @@ const Service = () => {
             </p>
           </div>
         </div>
+
         <Parallax
           bgImage="https://a6e8z9v6.stackpathcdn.com/traveltour/wp-content/uploads/2016/06/shutterstock_220323652.jpg"
           strength={200}
@@ -122,6 +132,7 @@ const Service = () => {
             <p className=" text-lg font-normal text-gray-500 mb-5">Strategy</p>
             <p className=" text-3xl lg:text-4xl font-bold text-gray-800">
               We Provide Solutions
+
             </p>
             <p className=" text-xl text-slate-500 py-8">
               A wonderful serenity has taken possession of my entire soul, like
@@ -133,6 +144,7 @@ const Service = () => {
             </p>
           </div>
         </div>
+
       </div>
 
       <div className="h-auto bg-service-middle bg-center bg-cover bg-fixed">
@@ -168,6 +180,7 @@ const Service = () => {
             </button>
           </div>
         </div>
+
       </div>
     </>
   );
