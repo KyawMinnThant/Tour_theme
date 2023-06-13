@@ -192,7 +192,7 @@ const Contact = () => {
       </div>
       <a
         href="#one"
-        className={up ? "  fixed bottom-[30px] right-[30px]" : "hidden"}
+        className={up ? " z-[200] fixed bottom-[30px] right-[30px]" : "hidden"}
       >
         <button className=" w-[40px] h-[40px] bg-[#DBDBDB] text-[#4B92E4] hover:transform hover:translate-y-[-5px] duration-300 flex justify-center items-center rounded-full">
           <IoIosArrowUp />

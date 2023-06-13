@@ -7,10 +7,12 @@ import Activity_tours from "../components/Activity_tours";
 import Discount from "../components/Discount";
 import TravelArticles from "../components/TravelArticles";
 import Booking from "../components/Booking";
+import Carousel from "../components/Carousel";
 
 const Dashboard = () => {
   return (
     <div className=" overflow-hidden">
+      <Carousel/>
       <Ourservices />
       <Popular />
       <Destinations />

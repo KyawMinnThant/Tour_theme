@@ -5,7 +5,7 @@ import { Drawer, Group, Button } from "@mantine/core";
 import { Navigation, Pagination, Autoplay, EffectFade } from "swiper";
 // import { Menu, rem } from "@mantine/core";
 import { Menu, Text } from "@mantine/core";
-import { IoIosArrowUp } from "react-icons/io";
+// import { IoIosArrowUp } from "react-icons/io";
 
 
 import WOW from "wow.js";
@@ -543,8 +543,9 @@ const Navbar = ({ modal, setModal }) => {
                               </NavLink>
                               <NavLink
                                 className={`flex active:text-gray-200 action justify-between items-center transition hover:text-gray-200 p-5 font-bold border border-b-2 border-t-0 border-s-0 border-e-0  border-gray-400 cursor-pointer `}
+                                to={"/destinations"}
                               >
-                                {" "}
+                                
                                 <p>Destinations</p>
                                 <AiOutlineRight className=" text-gray-400" />
                               </NavLink>
@@ -556,7 +557,7 @@ const Navbar = ({ modal, setModal }) => {
                                 <p>Tour System</p>
                                 <AiOutlineRight className=" text-gray-400" />
                               </NavLink>
-                              <NavLink
+                              <NavLink to={"/blog"}
                                 className={`flex active:text-gray-200 action justify-between items-center transition hover:text-gray-200 p-5 font-bold border border-b-2 border-t-0 border-s-0 border-e-0  border-gray-400 cursor-pointer `}
                               >
                                 {" "}
