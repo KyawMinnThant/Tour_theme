@@ -1,9 +1,10 @@
-
-@import "../node_modules/bootstrap/dist/css/bootstrap.min.css"
-
+@import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 
 /* about */
 
+* {
+  border: 0;
+}
 .overlay-about {
   opacity: 0;
   background: rgba(0, 0, 0, 0.5);
@@ -66,4 +67,3 @@
 
 .date-input::-webkit-calendar-picker-indicator {
 }
-

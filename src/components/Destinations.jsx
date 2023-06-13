@@ -55,18 +55,18 @@ const Destinations = () => {
         </p>
       </div>
 
-      <div className=" flex justify-center flex-wrap ">
+      <div className=" flex justify-center w-full flex-wrap ">
         {destinations?.map((item, index) => (
           <div id="maindes" key={index} className="maindes  transition-all">
-            <div className="relative border border-t-0 border-b-0 border-s-0 border-e-0 hover:border-b-[3px] hover:border-blue-800">
+            <div className="relative hover:border-b-[3px] hover:border-blue-800">
               <div
                 id="opa"
-                className="absolute    transition  opacity-[40%] lg:h-[45vh] md:w-[163px] md:h-[20vh]  bg-black bottom-0 hover:bottom-0 hover:top-0 w-full  lg:w-[303px] h-[60vh] "
+                className="absolute    transition  opacity-[40%] lg:h-[45vh] md:w-[263px] md:h-[40vh]  bg-black bottom-0 border-0 w-full  lg:w-[303px] h-[60vh] "
               ></div>{" "}
               <img
                 src={item?.img}
                 alt=""
-                className="w-full  justify-center mt-[50px]  lg:w-[303px] md:w-[163px] h-[60vh] lg:h-[45vh] md:h-[20vh]  "
+                className="w-full  justify-center mt-[50px]  lg:w-[300px] md:w-[263px] h-[60vh] lg:h-[45vh] md:h-[40vh]  "
               />
               <div className=" flex flex-col gap-3 items-center  w-full  absolute bottom-[30px]  ">
                 {" "}

@@ -19,7 +19,7 @@ const Searchmodal = ({ modal, setModal }) => {
         modal && `opacity-[70%]`
       }  bg-black flex justify-center items-center w-full h-[100vh]  z-[5000] fixed `}
     >
-      <div className="  flex items-center  text-white bg-black  p-3 text-3xl outline-0 border border-t-0 border-b-2 border-s-0 border-e-0 border-white">
+      <div className="  flex items-center  text-white bg-black  p-3 text-3xl outline-0 border-b-2  border-white">
         <input
           type="text"
           className=" bg-black outline-none w-[310px]  font-bold"

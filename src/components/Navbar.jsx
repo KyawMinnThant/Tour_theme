@@ -50,62 +50,62 @@ const Navbar = ({ modal, setModal }) => {
   wowjs.init();
   const [active, setactive] = useState(false);
   const [opened, { open, close }] = useDisclosure(false);
-  const bg_img = [
-    {
-      img: `https://hips.hearstapps.com/hmg-prod/images/village-beneath-mountain-on-snow-covered-landscape-royalty-free-image-1658138339.jpg?crop=0.99953xw:1xh;center,top&resize=980:*`,
-      text: () => {
-        return (
-          <p className=" text-white font-bold text-[40px] md:text-[70px] lg:text-[80px]">
-            Special
-          </p>
-        );
-      },
-      text_2: () => {
-        return (
-          <p className=" text-[#bad9ff] font-bold lg:text-[40px] text-[25px] md:text-[40px] space-x-5">
-            7 Days in Switzerland
-          </p>
-        );
-      },
-    },
-    {
-      img: `https://images.unsplash.com/photo-1499678329028-101435549a4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80`,
-      text: () => {
-        return (
-          <p className="text-[#bad9ff] font-bold lg:text-[40px] md:text-[35px] text-[25px]">
-            Find your perfect
-          </p>
-        );
-      },
-      text_2: () => {
-        return (
-          <p className=" lg:text-[70px] text-[50px] md:text-[60px] text-white font-bold">
-            {" "}
-            VACATION
-          </p>
-        );
-      },
-      text_3: "ITALY,VENICE,ROME,MILAN",
-    },
-    {
-      img: `https://live.staticflickr.com/4256/34476186234_b2e5e9fc71_b.jpg`,
-      text: () => {
-        return (
-          <p className="text-white lg:text-[40px] text-[25px] md:text-[35px]">
-            OPEN YOUR EYES TO
-          </p>
-        );
-      },
-      text_2: () => {
-        return (
-          <p className=" text-white font-bold text-[35px] md:text-[50px] lg:text-[60px]">
-            {" "}
-            The Hidden World
-          </p>
-        );
-      },
-    },
-  ];
+  // const bg_img = [
+  //   {
+  //     img: `https://hips.hearstapps.com/hmg-prod/images/village-beneath-mountain-on-snow-covered-landscape-royalty-free-image-1658138339.jpg?crop=0.99953xw:1xh;center,top&resize=980:*`,
+  //     text: () => {
+  //       return (
+  //         <p className=" text-white font-bold text-[40px] md:text-[70px] lg:text-[80px]">
+  //           Special
+  //         </p>
+  //       );
+  //     },
+  //     text_2: () => {
+  //       return (
+  //         <p className=" text-[#bad9ff] font-bold lg:text-[40px] text-[25px] md:text-[40px] space-x-5">
+  //           7 Days in Switzerland
+  //         </p>
+  //       );
+  //     },
+  //   },
+  //   {
+  //     img: `https://images.unsplash.com/photo-1499678329028-101435549a4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80`,
+  //     text: () => {
+  //       return (
+  //         <p className="text-[#bad9ff] font-bold lg:text-[40px] md:text-[35px] text-[25px]">
+  //           Find your perfect
+  //         </p>
+  //       );
+  //     },
+  //     text_2: () => {
+  //       return (
+  //         <p className=" lg:text-[70px] text-[50px] md:text-[60px] text-white font-bold">
+  //           {" "}
+  //           VACATION
+  //         </p>
+  //       );
+  //     },
+  //     text_3: "ITALY,VENICE,ROME,MILAN",
+  //   },
+  //   {
+  //     img: `https://live.staticflickr.com/4256/34476186234_b2e5e9fc71_b.jpg`,
+  //     text: () => {
+  //       return (
+  //         <p className="text-white lg:text-[40px] text-[25px] md:text-[35px]">
+  //           OPEN YOUR EYES TO
+  //         </p>
+  //       );
+  //     },
+  //     text_2: () => {
+  //       return (
+  //         <p className=" text-white font-bold text-[35px] md:text-[50px] lg:text-[60px]">
+  //           {" "}
+  //           The Hidden World
+  //         </p>
+  //       );
+  //     },
+  //   },
+  // ];
 
   return (
     <div className=" relative">
@@ -159,7 +159,7 @@ const Navbar = ({ modal, setModal }) => {
                   setclickhover(false);
                 }}
                 to={`/`}
-                className="h-[15vh] active items-center   border border-blue-600 border-t-0 border-l-0 border-r-0 border-b-0 hover:border-b-[2px]  text-white hidden xl:flex lg:flex  md:hidden  cursor-pointer"
+                className="h-[15vh] active items-center  hover:border-b-[10px] border-blue-700   text-white hidden xl:flex lg:flex  md:hidden  cursor-pointer"
               >
                 {" "}
                 Home
@@ -176,7 +176,7 @@ const Navbar = ({ modal, setModal }) => {
                     setclickhover(false);
                     settourhover(false);
                   }}
-                  className="h-[15vh] items-center  border border-blue-600 border-t-0 border-l-0 border-r-0 border-b-0 hover:border-b-[2px]  text-white hidden xl:flex lg:flex  md:hidden  cursor-pointer"
+                  className="h-[15vh] items-center hover:border-b-[10px] border-blue-700   text-white hidden xl:flex lg:flex  md:hidden  cursor-pointer"
                 >
                   {" "}
                   Pages
@@ -193,7 +193,7 @@ const Navbar = ({ modal, setModal }) => {
                   setclickhover(false);
                   settourhover(false);
                 }}
-                className="h-[15vh] items-center  border border-blue-600 border-t-0 border-l-0 border-r-0 border-b-0 hover:border-b-[2px]  text-white hidden xl:flex lg:flex  md:hidden  cursor-pointer"
+                className="h-[15vh] items-center hover:border-b-[10px] border-blue-700   text-white hidden xl:flex lg:flex  md:hidden  cursor-pointer"
               >
                 Tour List
               </NavLink>
@@ -203,7 +203,7 @@ const Navbar = ({ modal, setModal }) => {
                   settourhover(false);
                   setclickhover(false);
                 }}
-                className="h-[15vh] items-center   border border-blue-600 border-t-0 border-l-0 border-r-0 border-b-0 hover:border-b-[2px]  text-white hidden xl:flex lg:flex  md:hidden  cursor-pointer"
+                className="h-[15vh] items-center  hover:border-b-[10px] border-blue-700   text-white hidden xl:flex lg:flex  md:hidden  cursor-pointer"
               >
                 {" "}
                 Destinations
@@ -214,7 +214,7 @@ const Navbar = ({ modal, setModal }) => {
                   settourhover(false);
                   setclickhover(false);
                 }}
-                className="h-[15vh] items-center  border border-blue-600 border-t-0 border-l-0 border-r-0 border-b-0 hover:border-b-[2px]  text-white hidden xl:flex lg:flex  md:hidden  cursor-pointer"
+                className="h-[15vh] items-center  hover:border-b-[10px] border-blue-700  text-white hidden xl:flex lg:flex  md:hidden  cursor-pointer"
               >
                 Date & Pricing
               </NavLink>
@@ -224,7 +224,7 @@ const Navbar = ({ modal, setModal }) => {
                   settourhover(false);
                   setclickhover(false);
                 }}
-                className="h-[15vh] items-center  border border-blue-600 border-t-0 border-l-0 border-r-0 border-b-0 hover:border-b-[2px]  text-white hidden xl:flex lg:flex  md:hidden  cursor-pointer"
+                className="h-[15vh] items-center hover:border-b-[10px] border-blue-700   text-white hidden xl:flex lg:flex  md:hidden  cursor-pointer"
               >
                 {" "}
                 Tour System
@@ -236,7 +236,7 @@ const Navbar = ({ modal, setModal }) => {
                   settourhover(false);
                   setclickhover(false);
                 }}
-                className="h-[15vh] items-center   border border-blue-600 border-t-0 border-l-0 border-r-0 border-b-0 hover:border-b-[2px]  text-white hidden xl:flex lg:flex  md:hidden  cursor-pointer"
+                className="h-[15vh] items-center hover:border-b-[10px] border-blue-700    text-white hidden xl:flex lg:flex  md:hidden  cursor-pointer"
               >
                 {" "}
                 Blog
@@ -267,7 +267,7 @@ const Navbar = ({ modal, setModal }) => {
                           <Drawer.Body className=" mb-10">
                             <div className=" flex flex-col gap-1 text-gray-400  ">
                               <NavLink
-                                className={`flex active:text-gray-200 action justify-between items-center transition hover:text-gray-200 p-5 font-bold border border-b-2 border-t-0 border-s-0 border-e-0  border-gray-400 cursor-pointer `}
+                                className={`flex border-b-[2px] mt-[10px] border-gray-700 active:text-gray-200 action justify-between items-center transition hover:text-gray-200 p-2 font-bold   cursor-pointer `}
                               >
                                 {" "}
                                 <p>Home</p>
@@ -275,42 +275,42 @@ const Navbar = ({ modal, setModal }) => {
                               </NavLink>
                               <NavLink
                                 onClick={() => setpage(!page)}
-                                className={`flex active:text-gray-200 action justify-between items-center transition hover:text-gray-200 p-5 font-bold border border-b-2 border-t-0 border-s-0 border-e-0  border-gray-400 cursor-pointer `}
+                                className={`flex border-b-[2px] mt-[10px] border-gray-700 active:text-gray-200 action justify-between items-center transition hover:text-gray-200 p-2 font-bold   cursor-pointer `}
                               >
                                 {" "}
                                 <p>Pages </p>
                                 <AiOutlineRight className=" text-gray-400" />
                               </NavLink>
                               <NavLink
-                                className={`flex active:text-gray-200 action justify-between items-center transition hover:text-gray-200 p-5 font-bold border border-b-2 border-t-0 border-s-0 border-e-0  border-gray-400 cursor-pointer `}
+                                className={`flex border-b-[2px] mt-[10px] border-gray-700 active:text-gray-200 action justify-between items-center transition hover:text-gray-200 p-2 font-bold   cursor-pointer `}
                               >
                                 {" "}
                                 <p>Tour List</p>
                                 <AiOutlineRight className=" text-gray-400" />
                               </NavLink>
                               <NavLink
-                                className={`flex active:text-gray-200 action justify-between items-center transition hover:text-gray-200 p-5 font-bold border border-b-2 border-t-0 border-s-0 border-e-0  border-gray-400 cursor-pointer `}
+                                className={`flex border-b-[2px] mt-[10px] border-gray-700 active:text-gray-200 action justify-between items-center transition hover:text-gray-200 p-2 font-bold   cursor-pointer `}
                               >
                                 {" "}
                                 <p>Destinations</p>
                                 <AiOutlineRight className=" text-gray-400" />
                               </NavLink>
                               <NavLink
-                                className={`flex active:text-gray-200 action justify-between items-center transition hover:text-gray-200 p-5 font-bold border border-b-2 border-t-0 border-s-0 border-e-0  border-gray-400 cursor-pointer `}
+                                className={`flex border-b-[2px] mt-[10px] border-gray-700 active:text-gray-200 action justify-between items-center transition hover:text-gray-200 p-2 font-bold   cursor-pointer `}
                               >
                                 {" "}
                                 <p>Date & Pricing</p>
                                 <AiOutlineRight className=" text-gray-400" />
                               </NavLink>
                               <NavLink
-                                className={`flex active:text-gray-200 action justify-between items-center transition hover:text-gray-200 p-5 font-bold border border-b-2 border-t-0 border-s-0 border-e-0  border-gray-400 cursor-pointer `}
+                                className={`flex border-b-[2px] mt-[10px] border-gray-700 active:text-gray-200 action justify-between items-center transition hover:text-gray-200 p-2 font-bold   cursor-pointer `}
                               >
                                 {" "}
                                 <p>Tour System</p>
                                 <AiOutlineRight className=" text-gray-400" />
                               </NavLink>
                               <NavLink
-                                className={`flex active:text-gray-200 action justify-between items-center transition hover:text-gray-200 p-5 font-bold border border-b-2 border-t-0 border-s-0 border-e-0  border-gray-400 cursor-pointer `}
+                                className={`flex border-b-[2px] mt-[10px] border-gray-700 active:text-gray-200 action justify-between items-center transition hover:text-gray-200 p-2 font-bold   cursor-pointer `}
                               >
                                 {" "}
                                 <p>Blog</p>

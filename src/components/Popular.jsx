@@ -19,7 +19,7 @@ const Popular = () => {
       <img
         src="https://a6e8z9v6.stackpathcdn.com/traveltour/wp-content/uploads/2016/06/search-bg.jpg"
         alt=""
-        className=" relative w-full h-[1500px] object-cover md:h-[900px] lg:h-[900px]"
+        className=" relative w-full h-[1900px] object-cover md:h-[900px] lg:h-[900px]"
       />
       <div className=" flex flex-col md:flex-row lg:flex-row gap-5 justify-center bg-black p-10 opacity-60 items-center absolute top-[0px] left-0 right-0 z-50">
         <div className=" flex flex-col gap-3 ">
@@ -108,7 +108,7 @@ const Popular = () => {
           Search
         </button>
       </div>
-      <div className="absolute lg:top-[250px] md:top-[220px] top-[790px] left-[40px] lg:left-[50px] md:left-[50px]">
+      <div className="absolute lg:top-[250px] md:top-[220px] top-[1090px] left-[40px] lg:left-[50px] md:left-[50px]">
         <div className=" flex flex-row md:flex-row md:items-center md:align-middle lg:flex-row gap-3 items-start lg:items-center">
           <p className=" text-2xl lg:text-2xl md:text2xl text-white">
             Popular Tour Packages
@@ -155,7 +155,7 @@ const Popular = () => {
           pagination={{ clickable: true }}
           onSlideChange={() => console.log("slide change")}
           onSwiper={(swiper) => console.log(swiper)}
-          className=" h-[65vh] md:h-[40vh] lg:h-[60vh] transition-all "
+          className=" h-[75vh] md:h-[40vh] lg:h-[60vh] transition-all "
         >
           <div className=" flex mx-0">
             <SwiperSlide className=" ">
@@ -166,9 +166,9 @@ const Popular = () => {
                 >
                   <div
                     id=" showingview"
-                    className=" transition-all bg-black hover:opacity-100  md:hidden lg:flex justify-center items-center w-full h-[30.5vh] opacity-5 hidden absolute top-50 "
+                    className=" transition-all bg-black hover:opacity-100  md:hidden lg:flex justify-center items-center w-full h-[12vh] opacity-5 hidden absolute top-50 "
                   >
-                    <FaFilm className=" text-white text-3xl" />
+                    <FaFilm className=" flex justify-center items-center text-white text-3xl" />
                   </div>
                 </div>
 
