@@ -22,10 +22,13 @@ const Booking = () => {
     <div className=" flex flex-col md:flex-row lg:flex-row bg-blue-600 mt-[120px] h-[70vh] lg:h-[25vh] md:h-[15vh] ">
       <div className="">
         <p className="text-2xl font-bold flex  justify-center text-white  h-[25vh] bg-blue-800 w-full lg:w-[500px] md:w-[300px]">
-          <span className=" mt-[85px]"> Why Book With Us</span>
+          <span className=" mt-[75px] md:mt-[30px] lg:mt-[85px]">
+            {" "}
+            Why Book With Us
+          </span>
         </p>
       </div>{" "}
-      <div className=" flex flex-col md:flex-row mt-[50px] md:mt-[30px] lg:mt-[50px] lg:flex-row items-center lg:items-start justify-center w-[100%]  gap-4 ">
+      <div className=" flex flex-col md:flex-row mt-[50px] md:mt-[30px] lg:mt-[20px] lg:flex-row items-center lg:items-start justify-center w-[100%]  gap-4 ">
         {booking?.map((item, index) => (
           <div key={index} className=" flex items-center gap-3">
             <img

@@ -159,7 +159,7 @@ const Popular = () => {
         >
           <div className=" flex mx-0">
             <SwiperSlide className=" ">
-              <div className="relative main w-[100%]  h-[70vh] md:h-[40vh] lg:h-[70vh]  shadow-md   bg-white ">
+              <div className="relative main w-[100%]  h-[90vh] md:h-[60vh] lg:h-[70vh]  shadow-md   bg-white ">
                 <div
                   id="main"
                   className="absolute hidden md:hidden lg:block hover:opacity-[70%] transition-all opacity-5 bg-black w-full h-[31vh] lg:h-[30.5vh] md:h-[19vh] "
@@ -191,7 +191,7 @@ const Popular = () => {
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div className=" w-[100%] h-[70vh] md:h-[40vh] lg:h-[70vh] mr-[70px] lg:mr-0 md:mr-0  shadow-md  bg-white">
+              <div className=" w-[100%] h-[90vh] md:h-[60vh] lg:h-[70vh] mr-[70px] lg:mr-0 md:mr-0  shadow-md  bg-white">
                 <img src=" https://a6e8z9v6.stackpathcdn.com/traveltour/wp-content/uploads/2017/01/shutterstock_151616084-700x450.jpg" />
                 <div className=" p-4">
                   <div className=" flex justify-between">
@@ -221,7 +221,7 @@ const Popular = () => {
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div className=" w-[100%] h-[70vh] md:h-[40vh] lg:h-[70vh]  shadow-md  bg-white ">
+              <div className=" w-[100%] h-[90vh] md:h-[60vh lg:h-[70vh]  shadow-md  bg-white ">
                 <img src=" https://a6e8z9v6.stackpathcdn.com/traveltour/wp-content/uploads/2016/06/shutterstock_178807262-700x450.jpg" />
                 <div className=" p-4">
                   <div className=" flex justify-between">
@@ -254,7 +254,7 @@ const Popular = () => {
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div className=" w-[100%] h-[70vh] md:h-[40vh] lg:h-[70vh]   shadow-md  bg-white ">
+              <div className=" w-[100%] h-[90vh] md:h-[60vh lg:h-[70vh]   shadow-md  bg-white ">
                 <img src=" https://a6e8z9v6.stackpathcdn.com/traveltour/wp-content/uploads/2016/06/shutterstock_245507692-700x450.jpg" />
                 <div className=" p-4">
                   <div className=" flex justify-between">
@@ -287,7 +287,7 @@ const Popular = () => {
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div className=" w-[100%] h-[70vh] md:h-[40vh] lg:h-[70vh]   shadow-md  bg-white ">
+              <div className=" w-[100%] h-[90vh] md:h-[60vh] lg:h-[70vh]   shadow-md  bg-white ">
                 <img src=" https://a6e8z9v6.stackpathcdn.com/traveltour/wp-content/uploads/2016/06/photo-1459255418679-d6424da9ee33-700x450.jpg" />
                 <div className=" p-4">
                   <div className=" flex justify-between">
@@ -318,7 +318,7 @@ const Popular = () => {
             </SwiperSlide>
 
             <SwiperSlide>
-              <div className=" w-[100%] h-[70vh] md:h-[40vh] lg:h-[70vh]   shadow-md  bg-white ">
+              <div className=" w-[100%] h-[90vh] md:h-[60vh lg:h-[70vh]   shadow-md  bg-white ">
                 <img src="https://a6e8z9v6.stackpathcdn.com/traveltour/wp-content/uploads/2016/06/shutterstock_147744218-700x450.jpg" />
                 <div className=" p-4">
                   <div className=" flex justify-between">
@@ -348,7 +348,7 @@ const Popular = () => {
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div className=" w-[100%] h-[70vh] md:h-[40vh] lg:h-[70vh]   shadow-md  bg-white ">
+              <div className=" w-[100%] h-[90vh] md:h-[60vh lg:h-[70vh]   shadow-md  bg-white ">
                 <img src=" https://a6e8z9v6.stackpathcdn.com/traveltour/wp-content/uploads/2016/06/shutterstock_136984760-700x450.jpg" />
                 <div className=" p-4">
                   <div className=" flex justify-between">

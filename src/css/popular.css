@@ -4,6 +4,6 @@
   cursor: pointer;
 }
 
-.main {
+#main {
   transition: 2s;
 }

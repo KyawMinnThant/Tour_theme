@@ -4,8 +4,9 @@ import { useDisclosure } from "@mantine/hooks";
 import { Drawer, Group, Button } from "@mantine/core";
 import { Navigation, Pagination, Autoplay, EffectFade } from "swiper";
 import { Menu, rem } from "@mantine/core";
+
 import WOW from "wow.js";
-import "../css/nav.css";
+import "../css/navdrop.css";
 import "animate.css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -27,12 +28,18 @@ import {
   AiOutlineSearch,
   AiOutlineMenu,
 } from "react-icons/ai";
-import { NavLink } from "react-router-dom";
+// import { Link, div } from "react-router-dom";
 import Pages from "./Pages";
+import Dropdown from "./Dropdown";
+import Tourdropdown from "./Tourdropdown";
+import { NavLink } from "react-router-dom";
 // import { Carousel } from "@mantine/carousel";
 
 const Navbar = ({ modal, setModal }) => {
   const [page, setpage] = useState(false);
+  const [clickhover, setclickhover] = useState(false);
+  const [tourhover, settourhover] = useState(false);
+
   const wowjs = new WOW({
     boxClass: "wow", // default
     animateClass: "animate__animated", // default
@@ -101,8 +108,8 @@ const Navbar = ({ modal, setModal }) => {
   ];
 
   return (
-    <div>
-      <div className=" fixed bg-black p-1 lg:p-4 z-[1000]  md:p-4  w-full opacity-80 overflow-hidden ">
+    <div className=" relative">
+      <div className=" fixed bg-black p-1 lg:p-4 z-[1000]  md:p-1  w-full opacity-80 overflow-hidden ">
         <div className="  lg:flex xl:flex hidden md:flex justify-around ">
           <div className=" flex gap-6">
             <div className=" flex gap-2 items-center">
@@ -134,7 +141,7 @@ const Navbar = ({ modal, setModal }) => {
           </div>
         </div>
 
-        <div className="z-50 p-2 flex  lg:gap-[180px] xl:gap-[180px] gap-[80px] md:gap-[380px] mx-[20px] lg:mx-[180px] xl:mx-[190px] md:mx-[100px] justify-center md:justify-between lg:justify-between xl:justify-normal  items-center  lg:mt-10 xl:mt-10 mt-5 md-mt-5 mb-2">
+        <div className="z-50 p-2 flex  lg:gap-[180px] xl:gap-[280px] gap-[70px] md:gap-[80px] mx-[20px] lg:mx-[180px] xl:mx-[190px] md:mx-[0px] justify-center md:justify-start lg:justify-between xl:justify-normal  items-center h-[10vh]  lg:mt-10 xl:mt-10 mt-5 md-mt-5 mb-2">
           <div className=" ">
             <img
               src="https://a6e8z9v6.stackpathcdn.com/traveltour/wp-content/themes/traveltour/images/logo.png"
@@ -143,130 +150,189 @@ const Navbar = ({ modal, setModal }) => {
             />
           </div>
 
-          <div className=" flex items-center  justify-between w-full ">
-            <NavLink
-              to={`/`}
-              className="  text-white hidden xl:block lg:hidden  md:hidden "
-            >
-              {" "}
-              Home
-            </NavLink>
-
-            <NavLink className="text-white hidden xl:block lg:hidden  md:hidden">
-              {" "}
-              Pages
-            </NavLink>
-
-            <NavLink className="text-white hidden xl:block lg:hidden  md:hidden">
-              Tour List
-            </NavLink>
-            <NavLink className="text-white hidden xl:block lg:hidden  md:hidden">
-              {" "}
-              Destinations
-            </NavLink>
-
-            <NavLink className="text-white hidden xl:block  md:hidden">
-              Date & Pricing
-            </NavLink>
-            <NavLink className="text-white hidden xl:block  md:hidden">
-              {" "}
-              Tour System
-            </NavLink>
-            <NavLink className="text-white hidden xl:block  md:hidden">
-              {" "}
-              Blog
-            </NavLink>
-            <div className="flex items-center">
-              <AiOutlineSearch
-                onClick={() => setModal(true)}
-                className=" text-white text-xl font-bold block"
-              />
-
-              <div>
-                <Drawer.Root
-                  opened={opened}
-                  onClose={close}
-                  position="right"
-                  size="75%"
-                  className=" absolute z-[6000]"
+          <div className=" flex items-center  w-full ">
+            <div className="flex items-center gap-[20px] ml-auto lg:ml-0 md:ml-auto  md:gap-[20px]">
+              <NavLink
+                onPointerEnter={(e) => {
+                  e.preventDefault();
+                  settourhover(false);
+                  setclickhover(false);
+                }}
+                to={`/`}
+                className="h-[15vh] active items-center   border border-blue-600 border-t-0 border-l-0 border-r-0 border-b-0 hover:border-b-[2px]  text-white hidden xl:flex lg:flex  md:hidden  cursor-pointer"
+              >
+                {" "}
+                Home
+              </NavLink>
+              <NavLink className=" relative ">
+                <div
+                  onPointerEnter={(e) => {
+                    e.preventDefault();
+                    setclickhover(true);
+                    settourhover(false);
+                  }}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    setclickhover(false);
+                    settourhover(false);
+                  }}
+                  className="h-[15vh] items-center  border border-blue-600 border-t-0 border-l-0 border-r-0 border-b-0 hover:border-b-[2px]  text-white hidden xl:flex lg:flex  md:hidden  cursor-pointer"
                 >
-                  <Drawer.Overlay />
-                  <Drawer.Content className=" bg-[#1f1f1f]">
-                    {page ? (
-                      <Pages page={page} setpage={setpage} />
-                    ) : (
-                      <div className="">
-                        <Drawer.Header className=" bg-[#1f1f1f]">
-                          <Drawer.CloseButton className=" m-5 transition hover:bg-[#1f1f1f]  hover:text-gray-200  text-gray-400 " />
-                        </Drawer.Header>
-                        <Drawer.Body className=" mb-10">
-                          <div className=" flex flex-col gap-1 text-gray-400  ">
-                            <div
-                              className={`flex active:text-gray-200 action justify-between items-center transition hover:text-gray-200 p-5 font-bold border border-b-2 border-t-0 border-s-0 border-e-0  border-gray-400 cursor-pointer `}
-                            >
-                              {" "}
-                              <p>Home</p>
-                              <AiOutlineRight className=" text-gray-400" />
+                  {" "}
+                  Pages
+                </div>
+              </NavLink>
+              <NavLink
+                onPointerEnter={(e) => {
+                  e.preventDefault();
+                  settourhover(true);
+                  setclickhover(false);
+                }}
+                onClick={(e) => {
+                  e.preventDefault();
+                  setclickhover(false);
+                  settourhover(false);
+                }}
+                className="h-[15vh] items-center  border border-blue-600 border-t-0 border-l-0 border-r-0 border-b-0 hover:border-b-[2px]  text-white hidden xl:flex lg:flex  md:hidden  cursor-pointer"
+              >
+                Tour List
+              </NavLink>
+              <NavLink
+                onPointerEnter={(e) => {
+                  e.preventDefault();
+                  settourhover(false);
+                  setclickhover(false);
+                }}
+                className="h-[15vh] items-center   border border-blue-600 border-t-0 border-l-0 border-r-0 border-b-0 hover:border-b-[2px]  text-white hidden xl:flex lg:flex  md:hidden  cursor-pointer"
+              >
+                {" "}
+                Destinations
+              </NavLink>
+              <NavLink
+                onPointerEnter={(e) => {
+                  e.preventDefault();
+                  settourhover(false);
+                  setclickhover(false);
+                }}
+                className="h-[15vh] items-center  border border-blue-600 border-t-0 border-l-0 border-r-0 border-b-0 hover:border-b-[2px]  text-white hidden xl:flex lg:flex  md:hidden  cursor-pointer"
+              >
+                Date & Pricing
+              </NavLink>
+              <NavLink
+                onPointerEnter={(e) => {
+                  e.preventDefault();
+                  settourhover(false);
+                  setclickhover(false);
+                }}
+                className="h-[15vh] items-center  border border-blue-600 border-t-0 border-l-0 border-r-0 border-b-0 hover:border-b-[2px]  text-white hidden xl:flex lg:flex  md:hidden  cursor-pointer"
+              >
+                {" "}
+                Tour System
+              </NavLink>
+              <NavLink
+                to={`/blog`}
+                onPointerEnter={(e) => {
+                  e.preventDefault();
+                  settourhover(false);
+                  setclickhover(false);
+                }}
+                className="h-[15vh] items-center   border border-blue-600 border-t-0 border-l-0 border-r-0 border-b-0 hover:border-b-[2px]  text-white hidden xl:flex lg:flex  md:hidden  cursor-pointer"
+              >
+                {" "}
+                Blog
+              </NavLink>{" "}
+              <div className="flex ml-auto items-center">
+                <AiOutlineSearch
+                  onClick={() => setModal(true)}
+                  className=" text-white text-xl font-bold block"
+                />
+
+                <div>
+                  <Drawer.Root
+                    opened={opened}
+                    onClose={close}
+                    position="right"
+                    size="75%"
+                    className=" absolute z-[6000]"
+                  >
+                    <Drawer.Overlay />
+                    <Drawer.Content className=" bg-[#1f1f1f]">
+                      {page ? (
+                        <Pages page={page} setpage={setpage} />
+                      ) : (
+                        <div className="">
+                          <Drawer.Header className=" bg-[#1f1f1f]">
+                            <Drawer.CloseButton className=" m-5 transition hover:bg-[#1f1f1f]  hover:text-gray-200  text-gray-400 " />
+                          </Drawer.Header>
+                          <Drawer.Body className=" mb-10">
+                            <div className=" flex flex-col gap-1 text-gray-400  ">
+                              <NavLink
+                                className={`flex active:text-gray-200 action justify-between items-center transition hover:text-gray-200 p-5 font-bold border border-b-2 border-t-0 border-s-0 border-e-0  border-gray-400 cursor-pointer `}
+                              >
+                                {" "}
+                                <p>Home</p>
+                                <AiOutlineRight className=" text-gray-400" />
+                              </NavLink>
+                              <NavLink
+                                onClick={() => setpage(!page)}
+                                className={`flex active:text-gray-200 action justify-between items-center transition hover:text-gray-200 p-5 font-bold border border-b-2 border-t-0 border-s-0 border-e-0  border-gray-400 cursor-pointer `}
+                              >
+                                {" "}
+                                <p>Pages </p>
+                                <AiOutlineRight className=" text-gray-400" />
+                              </NavLink>
+                              <NavLink
+                                className={`flex active:text-gray-200 action justify-between items-center transition hover:text-gray-200 p-5 font-bold border border-b-2 border-t-0 border-s-0 border-e-0  border-gray-400 cursor-pointer `}
+                              >
+                                {" "}
+                                <p>Tour List</p>
+                                <AiOutlineRight className=" text-gray-400" />
+                              </NavLink>
+                              <NavLink
+                                className={`flex active:text-gray-200 action justify-between items-center transition hover:text-gray-200 p-5 font-bold border border-b-2 border-t-0 border-s-0 border-e-0  border-gray-400 cursor-pointer `}
+                              >
+                                {" "}
+                                <p>Destinations</p>
+                                <AiOutlineRight className=" text-gray-400" />
+                              </NavLink>
+                              <NavLink
+                                className={`flex active:text-gray-200 action justify-between items-center transition hover:text-gray-200 p-5 font-bold border border-b-2 border-t-0 border-s-0 border-e-0  border-gray-400 cursor-pointer `}
+                              >
+                                {" "}
+                                <p>Date & Pricing</p>
+                                <AiOutlineRight className=" text-gray-400" />
+                              </NavLink>
+                              <NavLink
+                                className={`flex active:text-gray-200 action justify-between items-center transition hover:text-gray-200 p-5 font-bold border border-b-2 border-t-0 border-s-0 border-e-0  border-gray-400 cursor-pointer `}
+                              >
+                                {" "}
+                                <p>Tour System</p>
+                                <AiOutlineRight className=" text-gray-400" />
+                              </NavLink>
+                              <NavLink
+                                className={`flex active:text-gray-200 action justify-between items-center transition hover:text-gray-200 p-5 font-bold border border-b-2 border-t-0 border-s-0 border-e-0  border-gray-400 cursor-pointer `}
+                              >
+                                {" "}
+                                <p>Blog</p>
+                                <AiOutlineRight className=" text-gray-400" />
+                              </NavLink>
                             </div>
-                            <div
-                              onClick={() => setpage(!page)}
-                              className={`flex active:text-gray-200 action justify-between items-center transition hover:text-gray-200 p-5 font-bold border border-b-2 border-t-0 border-s-0 border-e-0  border-gray-400 cursor-pointer `}
-                            >
-                              {" "}
-                              <p>Pages </p>
-                              <AiOutlineRight className=" text-gray-400" />
-                            </div>
-                            <div
-                              className={`flex active:text-gray-200 action justify-between items-center transition hover:text-gray-200 p-5 font-bold border border-b-2 border-t-0 border-s-0 border-e-0  border-gray-400 cursor-pointer `}
-                            >
-                              {" "}
-                              <p>Tour List</p>
-                              <AiOutlineRight className=" text-gray-400" />
-                            </div>
-                            <div
-                              className={`flex active:text-gray-200 action justify-between items-center transition hover:text-gray-200 p-5 font-bold border border-b-2 border-t-0 border-s-0 border-e-0  border-gray-400 cursor-pointer `}
-                            >
-                              {" "}
-                              <p>Destinations</p>
-                              <AiOutlineRight className=" text-gray-400" />
-                            </div>
-                            <div
-                              className={`flex active:text-gray-200 action justify-between items-center transition hover:text-gray-200 p-5 font-bold border border-b-2 border-t-0 border-s-0 border-e-0  border-gray-400 cursor-pointer `}
-                            >
-                              {" "}
-                              <p>Date & Pricing</p>
-                              <AiOutlineRight className=" text-gray-400" />
-                            </div>
-                            <div
-                              className={`flex active:text-gray-200 action justify-between items-center transition hover:text-gray-200 p-5 font-bold border border-b-2 border-t-0 border-s-0 border-e-0  border-gray-400 cursor-pointer `}
-                            >
-                              {" "}
-                              <p>Tour System</p>
-                              <AiOutlineRight className=" text-gray-400" />
-                            </div>
-                            <div
-                              className={`flex active:text-gray-200 action justify-between items-center transition hover:text-gray-200 p-5 font-bold border border-b-2 border-t-0 border-s-0 border-e-0  border-gray-400 cursor-pointer `}
-                            >
-                              {" "}
-                              <p>Blog</p>
-                              <AiOutlineRight className=" text-gray-400" />
-                            </div>
-                          </div>
-                        </Drawer.Body>
-                      </div>
-                    )}
-                  </Drawer.Content>
-                </Drawer.Root>
+                          </Drawer.Body>
+                        </div>
+                      )}
+                    </Drawer.Content>
+                  </Drawer.Root>
+                </div>
+
+                <Group position="center">
+                  <Button
+                    onClick={open}
+                    className=" text-white text-xl font-bold block md:block xl:hidden lg:hidden"
+                  >
+                    <AiOutlineMenu />
+                  </Button>
+                </Group>
               </div>
-
-              <Group position="center">
-                <Button
-                  onClick={open}
-                  className=" text-white text-xl font-bold block md:block xl:hidden lg:block"
-                >
-                  <AiOutlineMenu />
-                </Button>
-              </Group>
             </div>
           </div>
         </div>
@@ -292,7 +358,7 @@ const Navbar = ({ modal, setModal }) => {
         scrollbar={{ draggable: true }}
         onSlideChange={() => console.log("slide change")}
         onSwiper={(swiper) => console.log(swiper)}
-        className=" h-[60vh] lg:h-[95vh] md:h-[60vh] transition-all"
+        className=" h-[70vh] lg:h-[65vh] xl:h-[95vh] md:h-[65vh] transition-all"
       >
         {bg_img?.map((item, index) => (
           <SwiperSlide key={index}>
@@ -300,13 +366,13 @@ const Navbar = ({ modal, setModal }) => {
               <img
                 src={item?.img}
                 alt=""
-                className=" wow animate__fadeIn bg-black w-full h-[60vh] lg:h-[95vh]  md:h-[60vh] object-cover relative"
+                className=" wow animate__fadeIn bg-black w-full h-[70vh] lg:h-[65vh]  xl:h-[95vh] md:h-[65vh] object-cover relative"
               />
               <div className="absolute top-[210px] left-[20px] lg:top-[300px] lg:left-[200px] md:top-[300px] md:left-[200px]">
                 <p className="wow animate__fadeInUp ">{item?.text()}</p>
                 <p className="wow animate__fadeInRight ">{item?.text_2()}</p>
                 {item?.text_3 && (
-                  <p className="wow animate__fadeIn text-[#bad9ff] ml-3 hidden lg:block md:block">
+                  <p className="wow animate__fadeIn text-[#bad9ff] ml-3 hidden lg:block md:hidden">
                     {item?.text_3}
                   </p>
                 )}
@@ -321,6 +387,9 @@ const Navbar = ({ modal, setModal }) => {
         ...
       </Swiper>
       {/* Services */}
+      {clickhover === true && <Dropdown />}
+      {tourhover === true && <Tourdropdown />}
+      {/* <p className=" menudrop text-3xl text-white hidden"> Hello</p> */}
     </div>
   );
 };
