@@ -58,15 +58,15 @@ const Destinations = () => {
       <div className=" flex justify-center flex-wrap ">
         {destinations?.map((item, index) => (
           <div id="maindes" key={index} className="maindes  transition-all">
-            <div className="relative border border-t-0 border-b-0 border-s-0 border-e-0 hover:border-b-[3px] hover:border-blue-800">
-              <div
+            <div className="relative mt-[50px] bg-black border border-t-0 border-b-0 border-s-0 border-e-0 hover:border-b-[3px] hover:border-blue-800">
+              {/* <div
                 id="opa"
                 className="absolute    transition  opacity-[40%] lg:h-[45vh] md:w-[163px] md:h-[20vh]  bg-black bottom-0 hover:bottom-0 hover:top-0 w-full  lg:w-[303px] h-[60vh] "
-              ></div>{" "}
+              ></div>{" "} */}
               <img
                 src={item?.img}
                 alt=""
-                className="w-full  justify-center mt-[50px]  lg:w-[303px] md:w-[163px] h-[60vh] lg:h-[45vh] md:h-[20vh]  "
+                className="w-full  justify-center hover:opacity-70 duration-300  lg:w-[303px] md:w-[163px] h-[60vh] lg:h-[45vh] md:h-[20vh]  "
               />
               <div className=" flex flex-col gap-3 items-center  w-full  absolute bottom-[30px]  ">
                 {" "}
@@ -84,7 +84,7 @@ const Destinations = () => {
                     <div className="">
                       <p
                         id="showdis"
-                        className="transition-all font-bold hidden text-blue-800"
+                        className="transition-all font-bold hidden  text-blue-800"
                       >
                         View All Tours
                       </p>

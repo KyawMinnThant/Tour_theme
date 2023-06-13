@@ -57,8 +57,8 @@ export default {
         custom: "#8C8C8C",
         whyBookUsBg: "#f5f5f5",
       },
-    },
+    
     plugins: [],
 
-  },
+  
 };

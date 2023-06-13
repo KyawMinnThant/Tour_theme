@@ -177,7 +177,7 @@ const Contact = () => {
           referrerPolicy="no-referrer-when-downgrade"
         ></iframe>
       </div>
-      <div className="w-[470px] md:w-full max-w-[1150px] mt-[80px] px-[15px] mx-auto ">
+      <div className="w-[470px] md:w-full max-w-[1150px] mt-[80px] px-[15px] mx-auto mb-[50px]">
         <div className=" w-full">
           <div className=" max-w-[760px] mx-auto">
             <div className=" flex justify-center gap-10">

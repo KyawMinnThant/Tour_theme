@@ -82,7 +82,7 @@ const Blog = () => {
         </div>
       </div>
 
-      <div className=" md:w-full w-[470px]  md:flex  max-w-[1180px] mx-auto">
+      <div className=" md:w-full w-[470px]  md:flex  max-w-[1180px] mx-auto mb-[50px]">
         <div className=" w-full md:w-[65%]  ml-[15px] pt-[60px] px-[18px]">
           <div className="  mb-[40px] shadow-md">
             <div className=" bg-black  overflow-hidden ">
