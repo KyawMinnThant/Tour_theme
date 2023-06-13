@@ -1,0 +1,22 @@
+.maindes:hover #showdis {
+  display: block;
+  cursor: pointer;
+}
+
+.maindes:hover #opa {
+  opacity: 80%;
+  border: 2px solid rgb(0, 77, 220);
+  border-top: 0;
+  border-bottom: 2px solid rgb(0, 77, 220);
+  border-left: 0;
+  border-right: 0;
+  margin-left: 10x;
+}
+
+#opa {
+  transition: 0.5s;
+}
+
+#showdis {
+  transition: 1.5s;
+}
