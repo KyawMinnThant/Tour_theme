@@ -9,6 +9,7 @@ import { FiMail } from "react-icons/fi";
 import { FaDollarSign, FaHeadphones, FaPhone, FaStar } from "react-icons/fa";
 import { Pagination } from "@mantine/core";
 import StarRating from "../components/StarRating";
+import CustomDateInput from "../components/CustomDateInput";
 
 const itemPerPage = 6;
 
@@ -393,12 +394,14 @@ const TourList = () => {
               <h3 className=" text-white font-bold text-lg mb-1">Date</h3>
 
               <div className="">
-                <input
-                  type="date"
+                <CustomDateInput />
+                {/* <input
+                  type="text"
                   value=""
+                  onFocus="this.type='date'"
                   placeholder=" "
                   className=" py-3 ps-5 pe-[120px] w-[160px] h-[65px] date-input"
-                />
+                /> */}
               </div>
             </div>
             <div className=" mb-5 pe-5 pt-8">
