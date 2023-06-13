@@ -6,8 +6,9 @@ function CustomDateInput() {
     input: {
       width: "160px",
       height: "65px",
-      backgroundColor: "#f0f0f0",
-      border: "1px solid #ccc",
+      backgroundColor: "#585d6b",
+      border: "none",
+      borderRadius: "0px",
     },
   };
 

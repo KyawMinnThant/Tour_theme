@@ -22,89 +22,32 @@ const Pages = ({ page, setpage }) => {
         >
           <AiOutlineLeft className=" text-gray-400" />
         </div>
-       
-        <div
-          //   onClick={() => setpage(!page)}
-          className={`flex active:text-gray-200 action justify-between items-center transition hover:text-gray-200 p-5 font-bold border border-b-2 border-t-0 border-s-0 border-e-0  border-gray-400 cursor-pointer `}
-        >
-          {" "}
-          <p>Features </p>
-          <AiOutlineRight className=" text-gray-400" />
-        </div>
-       <Link to={"/about"}>
-        <div
-          className={`flex active:text-gray-200 action justify-between items-center transition hover:text-gray-200 p-5 font-bold border border-b-2 border-t-0 border-s-0 border-e-0  border-gray-400 cursor-pointer `}
-        >
-         
-          <p>About</p>
-          <AiOutlineRight className=" text-gray-400" />
-        </div>
+        <Link to={"/about"}>
+          <div
+            className={`flex active:text-gray-200 action justify-between items-center transition hover:text-gray-200 p-5 font-bold  border-b-2 border-t-0 border-s-0 border-e-0  border-gray-400 cursor-pointer `}
+          >
+            <p>About</p>
+            <AiOutlineRight className=" text-gray-400" />
+          </div>
         </Link>
         <Link to={"/service"}>
-        <div
-          className={`flex active:text-gray-200 action justify-between items-center transition hover:text-gray-200 p-5 font-bold border border-b-2 border-t-0 border-s-0 border-e-0  border-gray-400 cursor-pointer `}
-        >
-          {" "}
-          <p>Our Services</p>
-          <AiOutlineRight className=" text-gray-400" />
-        </div></Link>
+          <div
+            className={`flex active:text-gray-200 action justify-between items-center transition hover:text-gray-200 p-5 font-bold  border-b-2 border-t-0 border-s-0 border-e-0  border-gray-400 cursor-pointer `}
+          >
+            {" "}
+            <p>Our Services</p>
+            <AiOutlineRight className=" text-gray-400" />
+          </div>
+        </Link>
         <Link to={"/contact"}>
-        <div
-          className={`flex active:text-gray-200 action justify-between items-center transition hover:text-gray-200 p-5 font-bold border border-b-2 border-t-0 border-s-0 border-e-0  border-gray-400 cursor-pointer `}
-        >
-          {" "}
-          <p>Contact</p>
-          <AiOutlineRight className=" text-gray-400" />
-        </div></Link>
-        <div
-          className={`flex active:text-gray-200 action justify-between items-center transition hover:text-gray-200 p-5 font-bold border border-b-2 border-t-0 border-s-0 border-e-0  border-gray-400 cursor-pointer `}
-        >
-          {" "}
-          <p>Portfolio</p>
-          <AiOutlineRight className=" text-gray-400" />
-        </div>
-        <div
-          className={`flex active:text-gray-200 action justify-between items-center transition hover:text-gray-200 p-5 font-bold border border-b-2 border-t-0 border-s-0 border-e-0  border-gray-400 cursor-pointer `}
-        >
-          {" "}
-          <p>Gallery</p>
-          <AiOutlineRight className=" text-gray-400" />
-        </div>
-        <div
-          className={`flex active:text-gray-200 action justify-between items-center transition hover:text-gray-200 p-5 font-bold border border-b-2 border-t-0 border-s-0 border-e-0  border-gray-400 cursor-pointer `}
-        >
-          {" "}
-          <p>Team</p>
-          <AiOutlineRight className=" text-gray-400" />
-        </div>
-        <div
-          className={`flex active:text-gray-200 action justify-between items-center transition hover:text-gray-200 p-5 font-bold border border-b-2 border-t-0 border-s-0 border-e-0  border-gray-400 cursor-pointer `}
-        >
-          {" "}
-          <p>Products</p>
-          <AiOutlineRight className=" text-gray-400" />
-        </div>
-        <div
-          className={`flex active:text-gray-200 action justify-between items-center transition hover:text-gray-200 p-5 font-bold border border-b-2 border-t-0 border-s-0 border-e-0  border-gray-400 cursor-pointer `}
-        >
-          {" "}
-          <p>Price Table</p>
-          <AiOutlineRight className=" text-gray-400" />
-        </div>
-        <div
-          className={`flex active:text-gray-200 action justify-between items-center transition hover:text-gray-200 p-5 font-bold border border-b-2 border-t-0 border-s-0 border-e-0  border-gray-400 cursor-pointer `}
-        >
-          {" "}
-          <p>Maintenance</p>
-          <AiOutlineRight className=" text-gray-400" />
-        </div>
-        <div
-          className={`flex active:text-gray-200 action justify-between items-center transition hover:text-gray-200 p-5 font-bold border border-b-2 border-t-0 border-s-0 border-e-0  border-gray-400 cursor-pointer `}
-        >
-          {" "}
-          <p>Coming soon</p>
-          <AiOutlineRight className=" text-gray-400" />
-        </div>
+          <div
+            className={`flex active:text-gray-200 action justify-between items-center transition hover:text-gray-200 p-5 font-bold  border-b-2 border-t-0 border-s-0 border-e-0  border-gray-400 cursor-pointer `}
+          >
+            {" "}
+            <p>Contact</p>
+            <AiOutlineRight className=" text-gray-400" />
+          </div>
+        </Link>
       </div>
     </div>
   );

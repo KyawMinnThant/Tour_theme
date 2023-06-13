@@ -1,6 +1,4 @@
-
 @import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
-
 
 /* about */
 
@@ -66,4 +64,3 @@
 
 .date-input::-webkit-calendar-picker-indicator {
 }
-

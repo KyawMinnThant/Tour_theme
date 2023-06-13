@@ -50,7 +50,7 @@ const Destinations = () => {
 
   return (
     <>
-      <div className=" bg-about-main flex flex-col justify-center gap-4 items-center bg-cover bg-center h-[250px] sm:h-[210px] md:h-[500px] w-auto relative font-sans text-white text-center">
+      <div className=" bg-about-main  pt-40 flex flex-col justify-center gap-4 items-center bg-cover bg-center h-[350px] sm:h-[310px] md:h-[600px] w-auto relative font-sans text-white text-center">
         <p className=" text-4xl md:text-7xl font-bold">Destinations</p>
         <p className=" text-xl sm:text-2xl">Explore Tours By Destinations</p>
       </div>
