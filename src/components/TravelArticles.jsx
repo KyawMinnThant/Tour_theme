@@ -33,7 +33,9 @@ const TravelArticles = () => {
             <p className=" text-gray-800 text-3xl">Travel Articles</p>
           </div>
           <p className=" text-blue-500 text-2xl hidden lg:block md:block">/</p>
-          <Link className=" text-blue-500 text-xl">Read All Articles </Link>
+          <Link to={`/blog`} className=" text-blue-500 text-xl">
+            Read All Articles{" "}
+          </Link>
         </div>
       </div>
 
@@ -43,13 +45,14 @@ const TravelArticles = () => {
             key={index}
             className=" relative shadow-md hover:scale-[1.05] transition   cursor-pointer"
           >
-            <div
-              className="opacity-0 transition   hover:opacity-60 flex flex-col gap-2 items-center justify-center absolute top-0 bg-black text-white  w-[100%] lg:w-[250px] md:w-[250px] h-[32
+            <Link
+              to={`/blogDetail`}
+              className="opacity-[0.5%] transition   hover:opacity-[60%] flex flex-col gap-2 items-center justify-center absolute top-0 bg-black text-white  w-[100%] lg:w-[250px] md:w-[250px] h-[32
               vh] lg:h-[33vh]"
             >
               <p className=" text-center">{item?.name}</p>
               <p>{item?.date}</p>
-            </div>
+            </Link>
             <img
               src={item?.url}
               className="   transition  hover:scale-[1.05] w-[100%] lg:w-[250px] md:w-[250px]"

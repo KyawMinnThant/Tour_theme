@@ -15,13 +15,13 @@ const Dropdown = () => {
 
         <div className=" flex justify-between items-center hover:text-gray-100">
           {" "}
-          <Link to={`/`}>About</Link>
+          <Link to={`/about`}>About</Link>
           <AiOutlineRight className=" text-gray-400" />
         </div>
 
         <div className=" flex justify-between items-center hover:text-gray-100">
           {" "}
-          <Link>Services</Link>
+          <Link to={`/service`}>Services</Link>
           <AiOutlineRight className=" text-gray-400" />
         </div>
 

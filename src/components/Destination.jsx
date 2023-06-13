@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { ImLocation2 } from "react-icons/im";
 import { SlLocationPin } from "react-icons/sl";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import "../css/des.css";
-const Destinations = () => {
+const Destination = () => {
   const destinations = [
     {
       name: "South Europe",
@@ -42,7 +42,7 @@ const Destinations = () => {
             <p className=" text-black text-3xl">Popular Destinations</p>
           </div>
           <p className=" text-blue-600 text-2xl hidden md:block lg:block">/</p>
-          <Link>
+          <Link to={`/destinations`}>
             <p className=" text-blue-600 font-bold">View All Destinations</p>
           </Link>
         </div>
@@ -82,12 +82,13 @@ const Destinations = () => {
                       <p className=" text-blue-600 font-bold">{item?.tour}</p>{" "}
                     </div>
                     <div className="">
-                      <p
+                      <NavLink
+                        to={`/destinations`}
                         id="showdis"
                         className="transition-all font-bold hidden text-blue-800"
                       >
                         View All Tours
-                      </p>
+                      </NavLink>
                     </div>
                   </div>
                 </div>
@@ -100,4 +101,4 @@ const Destinations = () => {
   );
 };
 
-export default Destinations;
+export default Destination;

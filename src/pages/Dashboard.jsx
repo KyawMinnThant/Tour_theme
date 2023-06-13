@@ -2,7 +2,7 @@ import React from "react";
 import Ourservices from "../components/Ourservices";
 // import Search_info from "../components/Popular";
 import Popular from "../components/Popular";
-import Destinations from "../components/Destinations";
+import Destination from "../components/Destination";
 import Activity_tours from "../components/Activity_tours";
 import Discount from "../components/Discount";
 import TravelArticles from "../components/TravelArticles";
@@ -15,7 +15,7 @@ const Dashboard = () => {
       <Carousel />
       <Ourservices />
       <Popular />
-      <Destinations />
+      <Destination />
       <Activity_tours />
       <Discount />
       <TravelArticles />

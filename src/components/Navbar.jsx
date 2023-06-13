@@ -203,6 +203,7 @@ const Navbar = ({ modal, setModal }) => {
                   settourhover(false);
                   setclickhover(false);
                 }}
+                to={`/destinations`}
                 className="h-[15vh] items-center  hover:border-b-[10px] border-blue-700   text-white hidden xl:flex lg:flex  md:hidden  cursor-pointer"
               >
                 {" "}
@@ -267,6 +268,7 @@ const Navbar = ({ modal, setModal }) => {
                           <Drawer.Body className=" mb-10">
                             <div className=" flex flex-col gap-1 text-gray-400  ">
                               <NavLink
+                                to={`/`}
                                 className={`flex border-b-[2px] mt-[10px] border-gray-700 active:text-gray-200 action justify-between items-center transition hover:text-gray-200 p-2 font-bold   cursor-pointer `}
                               >
                                 {" "}
@@ -289,6 +291,7 @@ const Navbar = ({ modal, setModal }) => {
                                 <AiOutlineRight className=" text-gray-400" />
                               </NavLink>
                               <NavLink
+                                to={`/destinations`}
                                 className={`flex border-b-[2px] mt-[10px] border-gray-700 active:text-gray-200 action justify-between items-center transition hover:text-gray-200 p-2 font-bold   cursor-pointer `}
                               >
                                 {" "}
@@ -310,6 +313,7 @@ const Navbar = ({ modal, setModal }) => {
                                 <AiOutlineRight className=" text-gray-400" />
                               </NavLink>
                               <NavLink
+                                to={`/blog`}
                                 className={`flex border-b-[2px] mt-[10px] border-gray-700 active:text-gray-200 action justify-between items-center transition hover:text-gray-200 p-2 font-bold   cursor-pointer `}
                               >
                                 {" "}

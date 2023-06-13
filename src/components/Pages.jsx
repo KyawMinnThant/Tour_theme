@@ -1,5 +1,6 @@
 import React from "react";
 import { AiOutlineRight, AiOutlineLeft } from "react-icons/ai";
+import { Link } from "react-router-dom";
 import WOW from "wow.js";
 
 const Pages = ({ page, setpage }) => {
@@ -22,12 +23,6 @@ const Pages = ({ page, setpage }) => {
           <AiOutlineLeft className=" text-gray-400" />
         </div>
         <div
-          className={`flex border-b-[2px] mt-[10px] border-gray-700 active:text-gray-200 action justify-between items-center transition hover:text-gray-200 p-2 font-bold   cursor-pointer `}
-        >
-          {" "}
-          <p>About</p>
-        </div>
-        <div
           //   onClick={() => setpage(!page)}
           className={`flex border-b-[2px] mt-[10px] border-gray-700 active:text-gray-200 action justify-between items-center transition hover:text-gray-200 p-2 font-bold   cursor-pointer `}
         >
@@ -39,21 +34,21 @@ const Pages = ({ page, setpage }) => {
           className={`flex border-b-[2px] mt-[10px] border-gray-700 active:text-gray-200 action justify-between items-center transition hover:text-gray-200 p-2 font-bold   cursor-pointer `}
         >
           {" "}
-          <p>About</p>
+          <Link to={`/about`}>About</Link>
           <AiOutlineRight className=" text-gray-400" />
         </div>
         <div
           className={`flex border-b-[2px] mt-[10px] border-gray-700 active:text-gray-200 action justify-between items-center transition hover:text-gray-200 p-2 font-bold   cursor-pointer `}
         >
           {" "}
-          <p>Our Services</p>
+          <Link to={`/service`}>Our Services</Link>
           <AiOutlineRight className=" text-gray-400" />
         </div>
         <div
           className={`flex border-b-[2px] mt-[10px] border-gray-700 active:text-gray-200 action justify-between items-center transition hover:text-gray-200 p-2 font-bold   cursor-pointer `}
         >
           {" "}
-          <p>Contact</p>
+          <Link to={`/contact`}>Contact</Link>
           <AiOutlineRight className=" text-gray-400" />
         </div>
         <div
