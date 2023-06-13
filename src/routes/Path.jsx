@@ -7,6 +7,9 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Blog from "../pages/Blog";
 import Contact from "../pages/Contact";
+
+import BlogDetail from "../pages/BlogDetail";
+
 import Searchmodal from "../components/Searchmodal";
 
 // Destinations
@@ -18,6 +21,7 @@ import EasternEurope from "../pages/destinations/EasternEurope";
 import Europe from "../pages/destinations/Europe";
 import SouthAmerica from "../pages/destinations/SouthAmerica";
 import TourList from "../pages/TourList";
+
 
 const Path = () => {
   const [modal, setModal] = useState(false);
@@ -32,6 +36,11 @@ const Path = () => {
         <Route path="/blog" element={<Blog />} />
         <Route path="/destinations" element={<Destinations />} />
         <Route path="/contact" element={<Contact />} />
+
+        <Route path="/blogDetail" element={<BlogDetail />} />
+
+        
+
 
         <Route path="/about" element={<About/>} />
         <Route path="/service" element={<Service />} />
@@ -50,6 +59,7 @@ const Path = () => {
           path="/tour-destination/southAmerica"
           element={<SouthAmerica />}
         />
+
 
       </Routes>
       <Footer />
