@@ -2,6 +2,9 @@ import React, { useRef, useState } from "react";
 import { AiFillCheckCircle } from "react-icons/ai";
 import WOW from "wow.js";
 
+import { Parallax } from "react-parallax";
+
+
 //wow js
 const wowjs = new WOW({
   boxClass: "wow", // default
@@ -49,35 +52,11 @@ const teamMember = [
 const About = () => {
   const refSocial = useRef();
   const refProduct = useRef();
-  const refTran = useRef();
+
   let [social, setSocial] = useState(0);
   let [product, setProduct] = useState(0);
-  let [tran, setTran] = useState(0);
 
-  window.onscroll = function (params) {
-    // console.log(params);
-    scrollPoint();
-  };
 
-  function scrollPoint() {
-    let soc = refSocial.current;
-    let pro = refProduct.current;
-    const getScrollTop = document.documentElement.scrollTop;
-    const getScrollHeight = document.documentElement.scrollHeight;
-    if (getScrollTop >= 650) {
-      soc.style.width = "85%";
-      pro.style.width = "90%";
-      social += 3 * 5;
-      product += 3 * 5;
-      tran += 1.2;
-      setSocial(social);
-      setProduct(product);
-      setTran(tran);
-    } else if (getScrollTop <= 650) {
-      tran -= 1.5;
-      setTran(tran);
-    }
-  }
 
   return (
     <>
@@ -209,6 +188,7 @@ const About = () => {
       </div>
 
       <div className=" grid grid-cols-1 md:grid-cols-2 relative">
+
         <div className="w-full h-[360px] md:h-[925px] lg:h-[690.238px] bg-fixed overflow-hidden">
           <img
             ref={refTran}
@@ -218,6 +198,14 @@ const About = () => {
             alt=""
           />
         </div>
+
+        <Parallax
+          bgImage="https://a6e8z9v6.stackpathcdn.com/traveltour/wp-content/uploads/2016/06/shutterstock_74901229.jpg"
+          strength={200}
+        >
+          <div className="w-full h-[360px] md:h-[925px] lg:h-[690.238px]"></div>
+        </Parallax>
+
         <div className=" px-10 md:px-20 pt-20 pb-10 md:pb-0 bg-about-pair">
           <div className="wow animate__fadeInRight">
             <p className=" text-3xl lg:text-4xl font-bold text-gray-800">

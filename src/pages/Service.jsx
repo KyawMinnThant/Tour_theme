@@ -1,9 +1,12 @@
+
 import React, { useRef, useState } from "react";
+
 import { FaRegLightbulb, FaRegCreditCard } from "react-icons/fa";
 import { RiDownloadCloud2Line } from "react-icons/ri";
 import { CiClock2 } from "react-icons/ci";
 import { AiOutlinePieChart } from "react-icons/ai";
 import { SlLocationPin } from "react-icons/sl";
+import { Parallax } from "react-parallax";
 
 const cards = [
   {
@@ -44,42 +47,12 @@ const cards = [
   },
 ];
 
+
+
+
+
 const Service = () => {
-  let [tran, setTran] = useState(0);
-  let [two, setTwo] = useState(0);
-  let [three, setThree] = useState(0);
 
-  window.onscroll = function (params) {
-    // console.log(params);
-    scrollPoint();
-  };
-
-  function scrollPoint() {
-    const getScrollTop = document.documentElement.scrollTop;
-    if (getScrollTop >= 400) {
-      tran += 0.2;
-      setTran(tran);
-    } else if (getScrollTop <= 1000) {
-      tran -= 0.3 * 7;
-      setTran(tran);
-    }
-
-    if (getScrollTop >= 500) {
-      two += 0.2;
-      setTwo(two);
-    } else if (getScrollTop <= 1200) {
-      two -= 0.3 * 7;
-      setTwo(two);
-    }
-
-    if (getScrollTop >= 600) {
-      three += 0.2;
-      setThree(three);
-    } else if (getScrollTop <= 1300) {
-      three -= 0.3 * 7;
-      setThree(three);
-    }
-  }
 
   return (
     <>
@@ -92,15 +65,14 @@ const Service = () => {
         </p>
       </div>
 
-      <div className=" lg:h-[500.238px] grid grid-cols-1 md:grid-cols-2 relative overflow-hidden">
-        <div className="w-full h-[360px] md:h-[925px] lg:h-[900.238px] bg-fixed overflow-hidden">
-          <img
-            style={{ transform: `translate(0px, ${tran}px)` }}
-            className="h-full w-full bg-cover bg-center"
-            src="	https://a6e8z9v6.stackpathcdn.com/traveltour/wp-content/uploads/2016/06/shutterstock_210601591.jpg"
-            alt=""
-          />
-        </div>
+
+      <div className=" lg:h-[500.238px] grid grid-cols-1 md:grid-cols-2 relative">
+        <Parallax
+          bgImage="https://a6e8z9v6.stackpathcdn.com/traveltour/wp-content/uploads/2016/06/shutterstock_210601591.jpg"
+          strength={200}
+        >
+          <div className="w-full h-[360px] md:h-[925px] lg:h-[900.238px]"></div>
+        </Parallax>
         <div className=" px-10 md:px-20 pt-20 pb-10 md:pb-0 bg-about-pair">
           <div className="wow animate__fadeInRight">
             <p className=" text-lg font-normal text-gray-500 mb-5">Our Story</p>
@@ -127,6 +99,7 @@ const Service = () => {
             </p>
             <p className=" text-3xl lg:text-4xl font-bold text-gray-800">
               Our Top Missions
+
             </p>
             <p className=" text-xl text-slate-500 py-8">
               A wonderful serenity has taken possession of my entire soul, like
@@ -138,30 +111,28 @@ const Service = () => {
             </p>
           </div>
         </div>
-        <div className="w-full h-[360px] md:h-[925px] lg:h-[900.238px] bg-fixed overflow-hidden">
-          <img
-            style={{ transform: `translate(0px, ${two}px)` }}
-            className="h-full w-full bg-cover bg-center"
-            src="https://a6e8z9v6.stackpathcdn.com/traveltour/wp-content/uploads/2016/06/shutterstock_220323652.jpg"
-            alt=""
-          />
-        </div>
+
+        <Parallax
+          bgImage="https://a6e8z9v6.stackpathcdn.com/traveltour/wp-content/uploads/2016/06/shutterstock_220323652.jpg"
+          strength={200}
+        >
+          <div className="w-full h-[360px] md:h-[925px] lg:h-[900.238px]"></div>
+        </Parallax>
       </div>
 
       <div className=" lg:h-[500.238px] grid grid-cols-1 md:grid-cols-2 relative overflow-hidden">
-        <div className="w-full h-[360px] md:h-[925px] lg:h-[900.238px] bg-fixed overflow-hidden">
-          <img
-            style={{ transform: `translate(0px, ${three}px)` }}
-            className="h-full w-full bg-cover bg-center"
-            src="	https://a6e8z9v6.stackpathcdn.com/traveltour/wp-content/uploads/2016/06/shutterstock_147744218.jpg"
-            alt=""
-          />
-        </div>
+        <Parallax
+          bgImage="https://a6e8z9v6.stackpathcdn.com/traveltour/wp-content/uploads/2016/06/shutterstock_147744218.jpg"
+          strength={200}
+        >
+          <div className="w-full h-[360px] md:h-[925px] lg:h-[900.238px]"></div>
+        </Parallax>
         <div className=" px-10 md:px-20 pt-20 pb-10 md:pb-0 bg-about-pair">
           <div className="wow animate__fadeInRight">
             <p className=" text-lg font-normal text-gray-500 mb-5">Strategy</p>
             <p className=" text-3xl lg:text-4xl font-bold text-gray-800">
               We Provide Solutions
+
             </p>
             <p className=" text-xl text-slate-500 py-8">
               A wonderful serenity has taken possession of my entire soul, like
@@ -173,6 +144,7 @@ const Service = () => {
             </p>
           </div>
         </div>
+
       </div>
 
       <div className="h-auto bg-service-middle bg-center bg-cover bg-fixed">
@@ -208,6 +180,7 @@ const Service = () => {
             </button>
           </div>
         </div>
+
       </div>
     </>
   );
