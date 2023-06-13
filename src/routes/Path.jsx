@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { Route, Routes } from "react-router-dom";
 import Dashboard from "../pages/Dashboard";
+import About from "../pages/About";
+import Service from "../pages/Service";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Blog from "../pages/Blog";
@@ -31,7 +33,7 @@ const Path = () => {
         <Route path="/destinations" element={<Destinations />} />
         <Route path="/contact" element={<Contact />} />
 
-        <Route path="/about" element={<About />} />
+        <Route path="/about" element={<About/>} />
         <Route path="/service" element={<Service />} />
         <Route path="/tour-list" element={<TourList />} />
 

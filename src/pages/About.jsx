@@ -189,15 +189,15 @@ const About = () => {
 
       <div className=" grid grid-cols-1 md:grid-cols-2 relative">
 
-        <div className="w-full h-[360px] md:h-[925px] lg:h-[690.238px] bg-fixed overflow-hidden">
+        {/* <div className="w-full h-[360px] md:h-[925px] lg:h-[690.238px] bg-fixed overflow-hidden">
           <img
-            ref={refTran}
+        
             style={{ transform: `translate(0px, ${tran}px)` }}
             className="h-full w-full bg-cover bg-center"
             src="https://a6e8z9v6.stackpathcdn.com/traveltour/wp-content/uploads/2016/06/shutterstock_74901229.jpg"
             alt=""
           />
-        </div>
+        </div> */}
 
         <Parallax
           bgImage="https://a6e8z9v6.stackpathcdn.com/traveltour/wp-content/uploads/2016/06/shutterstock_74901229.jpg"
