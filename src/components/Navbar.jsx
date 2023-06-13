@@ -283,8 +283,9 @@ const Navbar = ({ modal, setModal }) => {
                                 <p>Pages </p>
                                 <AiOutlineRight className=" text-gray-400" />
                               </NavLink>
+
                               <NavLink
-                                className={`flex border-b-[2px] mt-[10px] border-gray-700 active:text-gray-200 action justify-between items-center transition hover:text-gray-200 p-2 font-bold   cursor-pointer `}
+                                className={`flex border-b-[2px] mt-[10px] border-gray-700 active:text-gray-200 action justify-between items-center transition hover:text-gray-200 p-1 font-bold cursor-pointer `}
                               >
                                 {" "}
                                 <p>Tour List</p>

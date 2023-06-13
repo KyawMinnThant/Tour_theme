@@ -10,6 +10,7 @@ import { FaDollarSign, FaHeadphones, FaPhone, FaStar } from "react-icons/fa";
 import { Pagination } from "@mantine/core";
 import StarRating from "../components/StarRating";
 import CustomDateInput from "../components/CustomDateInput";
+import { DateInput } from "@mantine/dates";
 
 const itemPerPage = 6;
 
@@ -320,12 +321,102 @@ const TourList = () => {
   return (
     <>
       <div
-        className=" hidden md:block bg-cover bg-center  pt-[225px] pb-[20px]"
+        className=" hidden lg:block bg-auto bg-center pt-[225px] pb-[20px]"
         style={{
           backgroundImage: `url(https://a6e8z9v6.stackpathcdn.com/traveltour/wp-content/uploads/2017/01/search-bg-2.jpg)`,
         }}
       >
-        <div className=" container mx-auto px-4">
+        <div className="hidden  md:flex md:flex-row lg:flex-row gap-5 justify-center bg-black p-10 opacity-100 bg-transparent items-center  top-[0px] left-0 right-0 z-50">
+          <div className=" flex flex-col gap-3 ">
+            <p className=" text-white font-bold ">Keywords</p>
+            <input
+              type="text"
+              placeholder="Keywords"
+              className=" bg-[#585d6b] w-[200px] md:w-[100px] lg:w-full  outline-none text-[#b9c1d5] p-4 shadow-md
+          "
+            />
+          </div>
+
+          <div className=" flex flex-col gap-3 ">
+            <p className=" text-white font-bold">Activity</p>
+            <select
+              defaultValue=""
+              name=" select_activity"
+              id=""
+              className=" bg-[#585d6b] w-[200px] md:w-[100px] lg:w-full outline-none text-[#b9c1d5] p-4 shadow-md"
+            >
+              <option value="Any">Any</option>
+              <option value="City Tours">City Tours</option>
+              <option value="Cultural and Thematic Tours">
+                Cultural and Thematic Tours
+              </option>
+              <option value="Family Friendly Tours">
+                Family Friendly Tours
+              </option>
+              <option value="Holiday & Seasonal Tours">
+                Holiday & Seasonal Tours
+              </option>
+              <option value="Indulgence & Luxury Tours">
+                Indulgence & Luxury Tours
+              </option>
+              <option value="Outdoor Activities">Outdoor Activities</option>
+              <option value="Relaxation Tours">Relaxation Tours</option>
+              <option value="Wild & Adventure Tours">
+                Wild & Adventure Tours
+              </option>
+            </select>
+          </div>
+
+          <div className=" flex flex-col gap-3 ">
+            <p className=" text-white font-bold">Destinations</p>
+            <select
+              defaultValue={""}
+              name=" select_Destinations"
+              id=""
+              className=" bg-[#585d6b] outline-none text-[#b9c1d5] w-[200px] md:w-[100px] lg:w-full p-4 shadow-md"
+            >
+              <option value="Any">Any</option>
+              <option value="Africa">Africa</option>
+              <option value="America">America</option>
+              <option value="Asia">Asia</option>
+              <option value="Eastern Europe">Eastern Europe</option>
+              <option value="Europe">Europe</option>
+              <option value="South America">South America</option>
+            </select>
+          </div>
+
+          <div className=" flex flex-col gap-3 ">
+            <p className=" text-white font-bold">Durations</p>
+            <select
+              defaultValue={""}
+              name=" select_durations"
+              id=""
+              className=" bg-[#585d6b] outline-none text-[#b9c1d5] w-[200px] md:w-[100px] lg:w-full p-4 shadow-md"
+            >
+              <option value="Any">Any</option>
+              <option value="1-day-Tour">1 day Tour</option>
+              <option value="2-4-days-Tour">2-4 days Tour</option>
+              <option value="5-7-days-Tour">5-7 days Tour</option>
+              <option value="7+-days-Tour">7 + days Tour</option>
+            </select>
+          </div>
+
+          <div className=" flex flex-col gap-3 ">
+            <p className=" text-white font-bold">Date</p>
+            {/* <input
+              type="date"
+              className=" bg-[#585d6b] outline-none w-[200px] md:w-[100px] lg:w-full text-[#b9c1d5] p-4 shadow-md
+          "
+            /> */}
+            <CustomDateInput className="w-[200px] md:w-[100px]" />
+          </div>
+
+          <button className=" py-4 px-6 mt-8 w-[200px] lg:w-[200px] md:w-[100px] text-white font-bold bg-[#388aee] ">
+            {" "}
+            Search
+          </button>
+        </div>
+        {/* <div className=" container mx-auto px-4">
           <div className=" px-5 pb-9 flex gap-5 align-middle items-center">
             <VscSearch className=" text-gray-500 font-bold text-2xl" />
             <p className="font-bold text-3xl text-white">Search Tours</p>
@@ -395,13 +486,6 @@ const TourList = () => {
 
               <div className="">
                 <CustomDateInput />
-                {/* <input
-                  type="text"
-                  value=""
-                  onFocus="this.type='date'"
-                  placeholder=" "
-                  className=" py-3 ps-5 pe-[120px] w-[160px] h-[65px] date-input"
-                /> */}
               </div>
             </div>
             <div className=" mb-5 pe-5 pt-8">
@@ -410,7 +494,7 @@ const TourList = () => {
               </button>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
 
       <div className=" md:grid md:grid-cols-12 md:grid-flow-row md:gap-10 pt-[70px] pb-[30px] mx-10 md:mx-0 flex flex-col justify-center items-center align-middle md:items-start">
@@ -440,7 +524,7 @@ const TourList = () => {
                       </p>
                       <p className=" text mt-5 text-custom">{place.detail}</p>
                     </div>
-                    <div className=" col-start-6 col-span-2 flex flex-col px-5 py-5">
+                    <div className=" col-start-6 col-span-2 flex flex-col ps-6 py-5">
                       <p className=" text-custom text-center">From</p>
                       <h2 className=" text-3xl text-center font-bold mt-1">
                         $ {place.price}

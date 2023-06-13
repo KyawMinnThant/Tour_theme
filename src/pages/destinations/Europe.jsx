@@ -137,7 +137,7 @@ const Europe = () => {
                       </p>
                       <p className=" text mt-5 text-custom">{place.detail}</p>
                     </div>
-                    <div className=" col-start-6 col-span-2 flex flex-col px-5 py-5">
+                    <div className=" col-start-6 col-span-2 flex flex-col ps-6 py-5">
                       <p className=" text-custom text-center">From</p>
                       <h2 className=" text-3xl text-center font-bold mt-1">
                         $ {place.price}
