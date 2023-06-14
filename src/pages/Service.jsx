@@ -79,7 +79,7 @@ const Service = () => {
             <p className=" text-3xl lg:text-4xl font-bold text-gray-800">
               A Little About Us
             </p>
-            <p className=" text-xl text-slate-500 py-8">
+            <p className=" text-xl text-slate-500 mt-3">
               A wonderful serenity has taken possession of my entire soul, like
               these sweet mornings of spring which I enjoy with my whole heart.
               I am alone, and feel the charm of existence in this spot, which
@@ -101,7 +101,7 @@ const Service = () => {
               Our Top Missions
 
             </p>
-            <p className=" text-xl text-slate-500 py-8">
+            <p className=" text-xl text-slate-500 mt-3">
               A wonderful serenity has taken possession of my entire soul, like
               these sweet mornings of spring which I enjoy with my whole heart.
               I am alone, and feel the charm of existence in this spot, which
@@ -134,7 +134,7 @@ const Service = () => {
               We Provide Solutions
 
             </p>
-            <p className=" text-xl text-slate-500 py-8">
+            <p className=" text-xl text-slate-500 mt-3">
               A wonderful serenity has taken possession of my entire soul, like
               these sweet mornings of spring which I enjoy with my whole heart.
               I am alone, and feel the charm of existence in this spot, which
@@ -147,7 +147,7 @@ const Service = () => {
 
       </div>
 
-      <div className="h-auto bg-service-middle bg-center bg-cover bg-fixed">
+      <div style={{ backgroundImage: "url('https://a6e8z9v6.stackpathcdn.com/traveltour/wp-content/uploads/2016/06/section-bg-3.jpg')" }} className="h-auto w-full bg-center bg-cover bg-fixed">
         <div className=" px-20 py-20 flex flex-wrap gap-5">
           {cards?.map((card, index) => {
             return (
