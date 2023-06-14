@@ -56,6 +56,25 @@ const About = () => {
   let [social, setSocial] = useState(0);
   let [product, setProduct] = useState(0);
 
+  window.onscroll = function(){
+      handleOnScroll();
+  }
+
+  function handleOnScroll(){
+    const onscrollPoint = document.documentElement.scrollTop; 
+    console.log(onscrollPoint);
+    if(onscrollPoint >= 250){
+
+      social+=5;
+      product+=3;
+      setSocial(social);
+      setProduct(product);
+      refSocial.current.style.width += social;
+      refProduct.current.style.width += product;
+
+    }
+  }
+
 
 
   return (
@@ -140,6 +159,7 @@ const About = () => {
                 {social <= 85 ? social : "85"}%
               </p>
             </div>
+            
             <div className="relative pt-3">
               <div
                 className="overflow-hidden h-[6px] mb-4 text-xs flex rounded"
@@ -148,7 +168,7 @@ const About = () => {
                 <div
                   ref={refSocial}
                   style={{
-                    width: "0%",
+                    width: `${social}px`,
                     background: "rgb(22, 22, 22)",
                     transition: "all 0.5s ease-out",
                   }}
@@ -175,7 +195,7 @@ const About = () => {
                 <div
                   ref={refProduct}
                   style={{
-                    width: "0%",
+                    width: `${product}px`,
                     background: "rgb(22, 22, 22)",
                     transition: "all 0.5s ease-out",
                   }}
@@ -377,3 +397,4 @@ const About = () => {
 };
 
 export default About;
+
