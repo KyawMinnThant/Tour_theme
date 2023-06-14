@@ -19,7 +19,6 @@ const wowjs = new WOW({
 });
 wowjs.init();
 
-
 const Blog = () => {
   const [up, setUp] = useState(false);
 
@@ -133,11 +132,11 @@ const Blog = () => {
                   should be...
                 </p>
                 <div className=" w-full">
-                 <Link to={"/blogDetail"}>
-                 <button className="    mt-[33px] text-[14px] bg-[#468ae7] py-[12px] px-[27px] text-white font-[600]">
-                    Read More
-                  </button>
-                 </Link>
+                  <Link to={"/blogDetail"}>
+                    <button className="    mt-[33px] text-[14px] bg-[#468ae7] py-[12px] px-[27px] text-white font-[600]">
+                      Read More
+                    </button>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -525,12 +524,6 @@ const Blog = () => {
         </div>
       </div>
 
-
-
-
-
-
-      
       <a
         href="#one"
         className={up ? " z-[200] fixed bottom-[30px] right-[30px]" : "hidden"}

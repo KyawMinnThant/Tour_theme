@@ -104,8 +104,8 @@ const Europe = () => {
 
   return (
     <>
-      <div className=" bg-about-main bg-cover bg-center h-[160px] md:h-[410px] w-auto relative">
-        <p className=" h-1 font-bold text-2xl md:text-5xl absolute top-16 left-10 md:top-64 md:left-32 text-white">
+      <div className=" bg-about-main bg-cover bg-center h-[260px] md:h-[410px] w-auto relative">
+        <p className=" h-1 font-bold text-2xl md:text-5xl absolute top-44 left-10 md:top-64 md:left-32 text-white">
           Europe
         </p>
       </div>
