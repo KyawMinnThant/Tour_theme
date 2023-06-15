@@ -1,6 +1,7 @@
 import React from "react";
 import { AiOutlineClockCircle, AiFillStar } from "react-icons/ai";
 import { FaFilm } from "react-icons/fa";
+import { Menu, Button, Text } from "@mantine/core";
 
 import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -21,8 +22,132 @@ const Popular = () => {
         alt=""
         className=" relative w-full h-[1600px] object-cover md:h-[700px] lg:h-[900px]"
       />
-      <div className=" flex flex-col md:flex-row lg:flex-row gap-5 justify-center bg-black p-10 opacity-60 items-center absolute top-[0px] left-0 right-0 z-50">
-        <div className=" flex flex-col gap-3 ">
+      <div className=" w-full  bg-[#292C33] opacity-60  absolute top-0 left-0">
+       
+      <div className=" max-w-[1180px]  mx-auto px-[15px] md:py-[30px]">
+          <div className=" w-[450px] px-[20px] pt-[50px] pb-[10px] md:w-full md:flex  mx-auto items-end  justify-between md:px-[18px] ">
+            <div className=" md:w-[15%] mb-[20px] md:mb-0">
+              <p className=" text-white mb-[10px] text-[13px] font-[800]">Keywords</p>
+              <input
+                type="text"
+                className=" py-[12px] w-full px-[17px] border-2 bg-[#585D6B]"
+              />
+            </div>
+            <div className=" md:w-[15%] mb-[20px] md:mb-0  ">
+            <p className=" text-white mb-[10px] text-[13px] font-[800]">Keywords</p>
+
+              <select
+                defaultValue=""
+                name=" select_activity"
+                className=" py-[12px] w-full px-[17px] border-2 bg-[#585D6B] "
+              >
+                <option className=" overflow-hidden w-[10%]" value="Any">
+                  Any
+                </option>
+                <option className=" overflow-hidden w-[10%]" value="City Tours">
+                  City Tours
+                </option>
+                <option
+                  className=" overflow-hidden w-[10%]"
+                  value="Cultural and Thematic Tours"
+                >
+                  Cultural and Thematic Tours
+                </option>
+                <option
+                  className=" overflow-hidden w-[10%]"
+                  value="Family Friendly Tours"
+                >
+                  Family Friendly Tours
+                </option>
+                <option
+                  className=" overflow-hidden w-[10%]"
+                  value="Holiday & Seasonal Tours"
+                >
+                  Holiday & Seasonal Tours
+                </option>
+                <option
+                  className=" overflow-hidden w-[10%]"
+                  value="Indulgence & Luxury Tours"
+                >
+                  Indulgence & Luxury Tours
+                </option>
+                <option
+                  className=" overflow-hidden w-[10%]"
+                  value="Outdoor Activities"
+                >
+                  Outdoor Activities
+                </option>
+                <option
+                  className=" overflow-hidden w-[10%]"
+                  value="Relaxation Tours"
+                >
+                  Relaxation Tours
+                </option>
+                <option
+                  className=" overflow-hidden w-[10%]"
+                  value="Wild & Adventure Tours"
+                >
+                  Wild & Adventure Tours
+                </option>
+              </select>
+            </div>
+
+            <div className=" md:w-[15%] mb-[20px] md:mb-0 ">
+            <p className=" text-white mb-[10px] text-[13px] font-[800]">Keywords</p>
+
+              <select
+                className=" py-[12px] w-full px-[17px] border-2 bg-[#585D6B] "
+                defaultValue={""}
+                name=" select_Destinations"
+                id=""
+              >
+                <option value="Any">Any</option>
+                <option value="Africa">Africa</option>
+                <option value="America">America</option>
+                <option value="Asia">Asia</option>
+                <option value="Eastern Europe">Eastern Europe</option>
+                <option value="Europe">Europe</option>
+                <option value="South America">South America</option>
+              </select>
+            </div>
+            <div className=" md:w-[15%] mb-[20px] md:mb-0">
+            <p className=" text-white mb-[10px] text-[13px] font-[800]">Keywords</p>
+
+              <select
+                defaultValue={""}
+                name=" select_durations"
+                id=""
+                className=" py-[12px] w-full px-[17px] border-2 bg-[#585D6B] "
+              >
+                <option value="Any">Any</option>
+                <option value="1-day-Tour">1 day Tour</option>
+                <option value="2-4-days-Tour">2-4 days Tour</option>
+                <option value="5-7-days-Tour">5-7 days Tour</option>
+                <option value="7+-days-Tour">7 + days Tour</option>
+              </select>
+            </div>
+            <div className=" md:w-[15%] mb-[20px] md:mb-0">
+            <p className=" text-white mb-[10px] text-[13px] font-[800]">Keywords</p>
+
+              <input
+                type="date"
+                className=" py-[12px] w-full px-[17px] border-2 bg-[#585D6B] "
+              />
+            </div>
+            <div className=" md:w-[15%] mb-[20px] md:mb-0">
+
+            <button className="  w-full py-[13px] px-[20px] mt-[32px] md:mt-0 text-white font-bold bg-[#388aee] ">
+              Search
+            </button>
+            </div>
+          </div>
+       
+
+      </div>
+      </div>
+     
+      {/* <div className=" flex flex-col md:flex-row lg:flex-row gap-5 justify-center bg-black p-10 opacity-60 items-center absolute top-[0px] left-0 right-0 z-50"> */}
+      {/* <div className=" flex flex-col gap-3 ">
           <p className=" text-white font-bold ">Keywords</p>
           <input
             type="text"
@@ -106,8 +231,8 @@ const Popular = () => {
         <button className=" py-4 px-6 mt-8 w-[200px] lg:w-[200px] md:w-[100px] text-white font-bold bg-[#388aee] ">
           {" "}
           Search
-        </button>
-      </div>
+        </button> */}
+      {/* </div> */}
       <div className="absolute lg:top-[250px] md:top-[250px] top-[1050px] left-[40px] lg:left-[50px] md:left-[50px]">
         <div className=" flex flex-row md:flex-row md:items-center md:align-middle lg:flex-row gap-3 items-start lg:items-center">
           <p className=" text-2xl lg:text-2xl md:text2xl text-white">
