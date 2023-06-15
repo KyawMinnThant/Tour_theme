@@ -8,11 +8,13 @@ import Discount from "../components/Discount";
 import TravelArticles from "../components/TravelArticles";
 import Booking from "../components/Booking";
 import Carousel from "../components/Carousel";
+import Test from "../components/Test";
 
 const Dashboard = () => {
   return (
-    <div className=" overflow-hidden">
-      <Carousel/>
+    <div >
+      {/* <Carousel /> */}
+      <Test/>
       <Ourservices />
       <Popular />
       <Destinations />

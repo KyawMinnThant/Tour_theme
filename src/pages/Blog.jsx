@@ -63,14 +63,14 @@ const Blog = () => {
   return (
     <>
       <div
-        className=" h-[448px] bg-cover bg-no-repeat bg-center "
+        className=" h-[448px] bg-cover  bg-no-repeat bg-center "
         style={{ backgroundImage: `url(${bgImage})` }}
       >
         <div
           id="one"
           className="flex h-full  items-center w-[450px] md:w-full px-[15px] max-w-[1180px] mx-auto"
         >
-          <div className="  flex  flex-col leading-extra-loose  animate__backInLeft wow">
+          <div className="  flex  flex-col leading-extra-loose  animate__backInLeft animate__animated">
             <h1 className=" mx-[15px]  text-white     text-[42px] font-bold tracking-wide ">
               Blog Full Right Sidebar With Frame
             </h1>

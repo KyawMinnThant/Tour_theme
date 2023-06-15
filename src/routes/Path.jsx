@@ -21,6 +21,7 @@ import EasternEurope from "../pages/destinations/EasternEurope";
 import Europe from "../pages/destinations/Europe";
 import SouthAmerica from "../pages/destinations/SouthAmerica";
 import TourList from "../pages/TourList";
+import Test from "../components/Test";
 
 
 const Path = () => {
@@ -45,6 +46,8 @@ const Path = () => {
         <Route path="/about" element={<About/>} />
         <Route path="/service" element={<Service />} />
         <Route path="/tour-list" element={<TourList />} />
+        <Route path="/test" element={<Test />} />
+
 
         {/* destinations */}
         <Route path="/tour-destination/africa" element={<Africa />} />

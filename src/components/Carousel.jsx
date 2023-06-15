@@ -65,50 +65,58 @@ const Carousel = () => {
     },
   ];
   return (
-    <div>
+    <div className="  ">
       <Swiper
         modules={[Navigation, Pagination, Autoplay, EffectFade]}
         spaceBetween={50}
         slidesPerView={1}
         navigation
         effect="fade"
-        autoplay={{
-          reverseDirection: true,
-          waitForTransition: true,
-          effect: "fade",
-          loop: "infinite",
-          speed: 5000,
-          delay: 5000,
-          fadeEffect: { crossFade: true },
-          disableOnInteraction: false,
-          pauseOnMouseEnter: true,
-        }}
+        // autoplay={{
+        //   reverseDirection: true,
+        //   waitForTransition: true,
+        //   effect: "fade",
+        //   loop: "infinite",
+        //   speed: 5000,
+        //   delay: 5000,
+        //   fadeEffect: { crossFade: true },
+        //   disableOnInteraction: false,
+        //   pauseOnMouseEnter: true,
+        // }}
         pagination={{ clickable: true }}
         scrollbar={{ draggable: true }}
-        onSlideChange={() => console.log("slide change")}
-        onSwiper={(swiper) => console.log(swiper)}
-        className=" h-[70vh] lg:h-[65vh] xl:h-[95vh] md:h-[75vh] transition-all"
+        // onSlideChange={() => console.log("slide change")}
+        // onSwiper={(swiper) => console.log(swiper)}
+        className=" h-[70vh]  lg:h-[70vh] xl:h-[95vh] md:h-[75vh] transition-all"
       >
         {bg_img?.map((item, index) => (
           <SwiperSlide key={index}>
-            <div>
+            <div className=" ">
               <img
                 src={item?.img}
                 alt=""
-                className=" wow animate__fadeIn bg-black w-full h-[70vh] lg:h-[65vh]  xl:h-[95vh] md:h-[75vh] object-cover relative"
+                className=" animate__animated animate__fadeIn bg-black w-full h-[70vh] lg:h-[70vh]  xl:h-[95vh] md:h-[75vh] object-cover  "
               />
-              <div className="absolute top-[210px] left-[20px] lg:top-[300px] lg:left-[200px] md:top-[300px] md:left-[200px]">
-                <p className="wow animate__fadeInUp ">{item?.text()}</p>
-                <p className="wow animate__fadeInRight ">{item?.text_2()}</p>
-                {item?.text_3 && (
-                  <p className="wow animate__fadeIn text-[#bad9ff] ml-3 hidden lg:block md:hidden">
-                    {item?.text_3}
-                  </p>
-                )}
-                <button className=" p-3 md:py-3 md:px-5 lg:py-3 lg:px-5 text-white bg-[#388aee] mt-5 ml-2">
+              
+              <div className="   top-[200px] left-[100px]  max-w-[1180px] mx-auto">
+                <div className="  w-full ">
                   {" "}
-                  Learn More
-                </button>
+                  <p className="animate__animated animate__fadeInUp ">
+                    {item?.text()}
+                  </p>
+                  <p className="animate__animated animate__fadeInRight ">
+                    {item?.text_2()}
+                  </p>
+                  {item?.text_3 && (
+                    <p className="animate__animated animate__fadeIn text-[#bad9ff] ml-3 hidden lg:block md:hidden">
+                      {item?.text_3}
+                    </p>
+                  )}
+                  <button className=" p-3 md:py-3 md:px-5 lg:py-3 lg:px-5 text-white bg-[#388aee] mt-5 ml-2">
+                    {" "}
+                    Learn More
+                  </button>
+                </div>
               </div>
             </div>
           </SwiperSlide>

@@ -1,7 +1,13 @@
 @import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
-
+@import "../node_modules/swiper/swiper.min.css";
+/* @import '../node_modules/swiper/components/navigation/navigation.min.css';
+@import '../node_modules/swiper/components/pagination/pagination.min.css';
+ */
 /* about */
-
+* {
+  padding: 0;
+  margin: 0;
+}
 .overlay-about {
   opacity: 0;
   background: rgba(0, 0, 0, 0.5);

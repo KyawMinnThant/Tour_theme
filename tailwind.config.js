@@ -10,6 +10,7 @@ export default {
       fontFamily: {
         sans: ["Poppins", "sans-serif"],
       },
+    
 
       backgroundColor: {
         // about start
