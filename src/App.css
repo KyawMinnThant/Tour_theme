@@ -70,3 +70,8 @@
 
 .date-input::-webkit-calendar-picker-indicator {
 }
+
+/* // */
+.swiper-slide {
+  width: 100%; /* Default width */
+}
