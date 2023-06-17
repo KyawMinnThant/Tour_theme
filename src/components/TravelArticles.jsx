@@ -25,11 +25,15 @@ const TravelArticles = () => {
     },
   ];
   return (
-    <div className=" mt-[100px] flex  flex-col gap-[50px] ">
-      <div className=" flex gap-3 item-center mx-[20px] md:mx-[170px] lg:mx-[170px]">
+    <>
+   
+
+    
+    <div className=" mt-[100px] md:max-w-[1180px] mx-auto max-w-[500px] px-[15px] flex  flex-col gap-[50px] ">
+      <div className=" flex gap-3 ">
         <div className=" flex flex-col lg:flex-row md:flex-row gap-4 items-center">
-          <div className=" flex">
-            <FaRegLightbulb className=" text-3xl text-blue-500" />
+          <div className=" flex items-center">
+            <FaRegLightbulb className=" text-3xl text-blue-500 mr-[10px]" />
             <p className=" text-gray-800 text-3xl">Travel Articles</p>
           </div>
           <p className=" text-blue-500 text-2xl hidden lg:block md:block">/</p>
@@ -59,6 +63,7 @@ const TravelArticles = () => {
         ))}
       </div>
     </div>
+    </>
   );
 };
 

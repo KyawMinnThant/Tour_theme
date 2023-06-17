@@ -45,7 +45,7 @@ const Contact = () => {
       >
         <div
           id="one"
-          className="flex h-full  items-center w-[450px] md:w-full px-[15px] max-w-[1180px] mx-auto"
+          className="flex h-full  items-center max-w-[500px] md:w-full px-[15px] md:max-w-[1180px] mx-auto"
         >
           <div className="  flex animate__duration-slow animate__backInUp animate__animated  flex-col leading-extra-loose  ">
             <h1 className=" mx-[15px]  text-white     text-[75px] font-bold tracking-wide ">
@@ -59,7 +59,7 @@ const Contact = () => {
       </div>
 
       <div className=" pt-[60px] pb-[30px] ">
-        <div className="w-[470px] md:w-full max-w-[1150px] px-[15px] md:flex mx-auto">
+        <div className="max-w-[470px] md:w-full md:max-w-[1150px] px-[15px] md:flex mx-auto">
           <div className="  wow animate__fadeInUp  w-full md:w-[33.3333%] pt-[50px] px-[20px] shadow-sm md:shadow-md">
             <div className=" px-[20px] pb-[55px] text-[#454545] text-[40px]">
               <FaPhoneAlt className=" w-[40px] h-[40px]" />
@@ -114,7 +114,7 @@ const Contact = () => {
         </div>
       </div>
       <div className=" bg-[#F3F3F3] pt-[95px] pb-[90px] ">
-        <div className=" w-[470px] md:w-full max-w-[1150px] pb-[30px] px-[15px] mx-auto">
+        <div className=" max-w-[470px] md:w-full md:max-w-[1150px] pb-[30px] px-[15px] mx-auto">
           <div className=" w-full">
             <div className=" max-w-[760px] mx-auto">
               <div className=" px-[20px] pb-[30px]">
@@ -166,7 +166,7 @@ const Contact = () => {
         </div>
       </div>
 
-      <div className=" w-[470px] md:w-full mx-auto ">
+      <div className=" max-w-[470px] mx-auto md:max-w-full  ">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d61107.062426404234!2d96.2279222!3d16.8168582!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c192d33b83bce5%3A0x7e1eb65b03467802!2sThuwanna%20park!5e0!3m2!1sen!2smm!4v1686325968827!5m2!1sen!2smm"
           width="100%"
@@ -177,7 +177,7 @@ const Contact = () => {
           referrerPolicy="no-referrer-when-downgrade"
         ></iframe>
       </div>
-      <div className="w-[470px] md:w-full max-w-[1150px] mt-[80px] px-[15px] mx-auto mb-[50px]">
+      <div className="max-w-[470px] md:w-full md:max-w-[1150px] mt-[80px] px-[15px] mx-auto mb-[50px]">
         <div className=" w-full">
           <div className=" max-w-[760px] mx-auto">
             <div className=" flex justify-center gap-10">

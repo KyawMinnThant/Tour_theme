@@ -90,7 +90,7 @@ const Test = () => {
 
   const currentImage = bg_img[currentImageIndex];
   return (
-    <div className="swiper-container">
+    <div className=" bg-gray-500 swiper-container">
       <Swiper
         modules={[Navigation, Pagination, Autoplay, EffectFade]}
         navigation
@@ -99,14 +99,20 @@ const Test = () => {
         autoplay={{ delay: 3000 }}
         onSlideChange={(swiper) => setCurrentImageIndex(swiper.realIndex)}
         breakpoints={{
-            // Hide navigation in small and medium screens
-           sm: {
-            navigation : false
-           },
-            md: {
-              navigation: false,
-            },
-          }}
+          400: {
+            // navigation: false,
+            navigation: false
+          },
+          768: {
+            navigation: true,
+          },
+          1024: {
+            navigation: true,
+          },
+          1440: {
+            navigation: true,
+          },
+        }}
       >
         {bg_img.map((image, index) => (
           <SwiperSlide key={index}>

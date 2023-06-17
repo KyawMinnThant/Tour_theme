@@ -68,7 +68,7 @@ const Blog = () => {
       >
         <div
           id="one"
-          className="flex h-full  items-center w-[450px] md:w-full px-[15px] max-w-[1180px] mx-auto"
+          className="flex h-full  items-center max-w-[450px] md:w-full px-[15px] md:max-w-[1180px] mx-auto"
         >
           <div className="  flex  flex-col leading-extra-loose  animate__backInLeft animate__animated">
             <h1 className=" mx-[15px]  text-white     text-[42px] font-bold tracking-wide ">
@@ -81,8 +81,8 @@ const Blog = () => {
         </div>
       </div>
 
-      <div className=" md:w-full w-[470px]  md:flex  max-w-[1180px] mx-auto mb-[50px]">
-        <div className=" w-full md:w-[65%]  ml-[15px] pt-[60px] px-[18px]">
+      <div className=" md:w-full max-w-[500px]  md:flex  md:max-w-[1180px] mx-auto mb-[50px]">
+        <div className=" w-full md:w-[65%]  ml-[15px] pt-[60px] px-[15px]">
           <div className="  mb-[40px] shadow-md">
             <div className=" bg-black  overflow-hidden ">
               <img
@@ -415,7 +415,7 @@ const Blog = () => {
           </div>
         </div>
 
-        <div className="  w-full  md:w-[35%] mr-[15px] pt-[60px] px-[18px]">
+        <div className="  w-full  md:w-[35%] mr-[15px] pt-[60px] px-[15px]">
           <div className=" mb-[50px]">
             <div className=" mb-[28px]">
               <h2 className=" text-[#383838] text-[16px] font-[700] mr-[28px] inline-block">

@@ -68,7 +68,7 @@ const Activity_tours = () => {
     //     </div>
     //   </div>
     // </div>
-    <div className=" max-w-[1180px] w-[500px] md:w-full mx-auto">
+    <div className=" md:max-w-[1180px] max-w-[500px] md:w-full mx-auto">
       <div className=" pt-[70px] pb-[30px] ">
         <div className=" px-[15px] mx-auto">
           <div className=" md:flex">

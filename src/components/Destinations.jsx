@@ -48,13 +48,7 @@ const Destinations = () => {
       name: "Europe",
       tours: 7,
     },
-    {
-      id: 3,
-      link: "easternEurope",
-      src: "https://a6e8z9v6.stackpathcdn.com/traveltour/wp-content/uploads/2017/01/photodune-488847-venice-m-800x960.jpg",
-      name: "Eastern Europe",
-      tours: 2,
-    },
+
     {
       id: 4,
       link: "asia",
@@ -79,71 +73,34 @@ const Destinations = () => {
   ];
 
   return (
-    // <div className=" mt-[50px]">
-    //   <div className=" ">
-    //     <div className="flex flex-col   lg:flex-row md:flex-row  gap-3 items-center ml-0 md:ml-10 lg:ml-10">
-    //       <div className="flex  gap-2">
-    //         {" "}
-    //         <ImLocation2 className=" text-3xl text-blue-600" />
-    //         <p className=" text-black text-3xl">Popular Destinations</p>
-    //       </div>
-    //       <p className=" text-blue-600 text-2xl hidden md:block lg:block">/</p>
-    //       <Link>
-    //         <p className=" text-blue-600 font-bold">View All Destinations</p>
-    //       </Link>
-    //     </div>
-
-    //     <p className=" w-[100%] text-center lg:text-start md:text-start  lg:w-[60%]  md:w-[60%] ml-0 md:ml-12 lg:ml-12 text-gray-600 mt-3">
-    //       Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel,
-    //       repellat pariatur! Voluptatum corrupti ratione, architecto praesentium
-    //       eum dolore doloribus explicabo, quis deserunt, quasi cupiditate iure
-    //       quibusdam doloremque impedit dolores. Ab.
-    //     </p>
-    //   </div>
-
-    //   <div className=" flex justify-center flex-wrap ">
-    //     {destinations?.map((item, index) => (
-    //       <div id="maindes" key={index} className="maindes  transition-all">
-    //         <div className="relative mt-[50px] bg-black border border-t-0 border-b-0 border-s-0 border-e-0 hover:border-b-[3px] hover:border-blue-800">
-    //           {/* <div
-    //             id="opa"
-    //             className="absolute    transition  opacity-[40%] lg:h-[45vh] md:w-[163px] md:h-[20vh]  bg-black bottom-0 hover:bottom-0 hover:top-0 w-full  lg:w-[303px] h-[60vh] "
-    //           ></div>{" "} */}
-    //           <img
-    //             src={item?.img}
-    //             alt=""
-    //             className="w-full  justify-center hover:opacity-70 duration-300  lg:w-[303px] md:w-[163px] h-[60vh] lg:h-[45vh] md:h-[20vh]  "
-    //           />
-    //           <div className=" flex flex-col gap-3 items-center  w-full  absolute bottom-[30px]  ">
-    //             {" "}
-    //             <div className="flex  items-center justify-around w-full">
-    //               <div className=" flex flex-col ">
-    //                 <div className=" flex flex-col lg:flex-row md:flex-col gap-[20px] md:gap-[20px] lg:gap-[60px] justify-around items-center w-full">
-    //                   <div className=" flex  gap-3 items-center ">
-    //                     <SlLocationPin className=" text-white text-2xl" />
-    //                     <p className="  shadow-black text-xl  text-white font-bold z-50">
-    //                       {item?.name}
-    //                     </p>
-    //                   </div>
-    //                   <p className=" text-blue-600 font-bold">{item?.tour}</p>{" "}
-    //                 </div>
-    //                 <div className="">
-    //                   <p
-    //                     id="showdis"
-    //                     className="transition-all font-bold hidden  text-blue-800"
-    //                   >
-    //                     View All Tours
-    //                   </p>
-    //                 </div>
-    //               </div>
-    //             </div>
-    //           </div>
-    //         </div>
-    //       </div>
-    //     ))}
-    //   </div>
-    // </div>
     <>
+      <div className=" md:max-w-[1180px] max-w-[500px] mx-auto ">
+        <div className=" w-full px-[15px] ">
+          <div className=" pt-[95px] pb-[5px]">
+            <div className=" px-[20px] pb-[20px]">
+              <div className=" md:flex items-end">
+                <div className=" flex">
+                  <TfiLocationPin className=" mr-[15px] mb-[5px] text-[#467fe7] text-[29px]" />
+                  <h1 className=" text-[29px] font-[400] text-[#383838] ">
+                    Popular Destinations
+                  </h1>
+                </div>
+                <p className=" md:ml-[25px] md:mt-0 mt-[10px] text-[15px] text-[#84a7e8]">
+                  / View All Destinations
+                </p>
+              </div>
+            </div>
+            <div className=" px-[20px] pb-[20px] md:w-[75%]">
+              <p className=" text-[15px] text-[#8c8c8c] mb-[20px] leading-[1.7]">
+                Etiam porta sem malesuada magna mollis euismod. Maecenas sed
+                diam eget risus varius blandit sit amet non magna. Vivamus
+                sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div className="container flex justify-center flex-wrap  mt-10 mx-auto">
         {destinations?.map((place) => {
           return (
@@ -181,6 +138,27 @@ const Destinations = () => {
           );
         })}
       </div>
+
+      {/* <div className=" w-full flex">
+        <div className=" w-[20%] bg-black overflow-hidden relative">
+          <div className=" relative">
+            <img
+              src="https://a6e8z9v6.stackpathcdn.com/traveltour/wp-content/uploads/2016/06/shutterstock_124333858-800x960.jpg"
+              alt=""
+              width={800}
+              height={960}
+            />
+          </div>
+          <div className="  ">
+            <div className=" flex">
+              <ImLocation2 />
+              <h1>South America</h1>
+              <p>3 tours</p>
+            </div>
+            <p>View all tours</p>
+          </div>
+        </div>
+      </div> */}
     </>
   );
 };

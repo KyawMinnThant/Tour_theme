@@ -3,7 +3,7 @@ import React from "react";
 const Ourservices = () => {
   return (
     <div className=" w-full bg-[#467fe8]">
-      <div className=" max-w-[1180px] mx-auto">
+      <div className=" max-w-[500px] md:max-w-[1180px] mx-auto">
       <div className=" px-[18px] py-[45px]  mx-[15px]  w-full   ">
       <div className=" flex flex-col md:h-[105.484px] h-fit  md:flex-row justify-center items-center gap-[50px] md:gap-[]">
           {/* Destination */}
