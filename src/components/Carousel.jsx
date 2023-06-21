@@ -97,7 +97,7 @@ const Carousel = () => {
                 alt=""
                 className=" animate__animated animate__fadeIn bg-black w-full h-[70vh] lg:h-[70vh]  xl:h-[95vh] md:h-[75vh] object-cover  "
               />
-              
+
               <div className="   top-[200px] left-[100px]  max-w-[1180px] mx-auto">
                 <div className="  w-full ">
                   {" "}

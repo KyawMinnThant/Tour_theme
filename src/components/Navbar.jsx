@@ -49,6 +49,7 @@ const Navbar = ({ modal, setModal }) => {
     mobile: true, // default
     live: true, // default
   });
+
   wowjs.init();
   const [active, setactive] = useState(false);
   const [opened, { open, close }] = useDisclosure(false);
@@ -70,13 +71,13 @@ const Navbar = ({ modal, setModal }) => {
       <div
         className={
           up
-            ? " fixed top-[-44px]  lg:top-[-64px] w-full z-[1000]"
-            : " absolute  top-0   w-full z-[1000]"
+            ? " fixed top-[-44px] lg:top-[-64px] w-full z-[1000]"
+            : " absolute  top-0 w-full z-[1000]"
         }
       >
         {/* test with mantine */}
 
-        <div className="    w-full h-[66px]  pt-[20px] lg:opacity-60 bg-black   ">
+        <div className=" w-full h-[66px] pt-[20px] lg:opacity-60 bg-black   ">
           <div className=" max-w-[500px] md:max-w-[1180px] mx-auto ">
             <div className=" px-[18px] mx-[15px] hidden sm:flex justify-between ">
               <div className=" hidden md:flex lg:gap-6 gap-2">
@@ -228,7 +229,7 @@ const Navbar = ({ modal, setModal }) => {
                         opened={opened}
                         onClose={close}
                         position="right"
-                        size="75%"
+                        size="50%"
                         className=" absolute z-[6000]"
                       >
                         <Drawer.Overlay />

@@ -44,72 +44,88 @@ const Booking = () => {
     //     ))}
     //   </div>
     // </div>
-   <div className=" bg-[#488AE8]">
-     <div className=" md:max-w-[1180px] max-w-[500px] mx-auto  mt-20 px-[15px]">
-      <div className=" lg:h-[180] xl:h-[136px] md:h-[180px] md:flex justify-between">
-        <div className=" w-full md:w-[24%] h-full py-[56px] pl-[20px] md:pl-0 bg-[#4263C1] md:bg-transparent">
-         <p className=" text-[19px] font-[400] text-white "> Why Book With Us?</p>
-        </div>
-        <div className=" w-full md:w-[24%] pt-[40px]">
-          <div className=" px-[20px] pb-[20px] flex items-start">
-            <img
-              className=" mr-[20px] "
-              src="https://a6e8z9v6.stackpathcdn.com/traveltour/wp-content/uploads/2016/06/icon-10.png"
-              width="37"
-              height="39"
-              title="icon-10"
-            />
-            <div>
-              <div className=" pt-[5px] mb-[5px]">
-                <p className=" text-[14px] font-[600] text-white leading-[1.55]"> 40,000+ Customers</p>
-              </div>
-              <div className=" mb-[20px]">
-                <p className=" leading-[1.7] text-[#b9cdf3]">Morbi leo risus, porta ac</p>
+    <div className=" bg-[#488AE8]">
+      <div className=" md:max-w-[1180px] max-w-[500px] mx-auto  mt-20 px-[15px]">
+        <div className=" lg:h-[180] xl:h-[136px] md:h-[180px] md:flex justify-between">
+          <div className=" w-full md:w-[24%] h-full py-[56px] pl-[20px] md:pl-0 bg-[#4263C1] md:bg-transparent">
+            <p className=" text-[19px] font-[400] text-white ">
+              {" "}
+              Why Book With Us?
+            </p>
+          </div>
+          <div className=" w-full md:w-[24%] pt-[40px]">
+            <div className=" px-[20px] pb-[20px] flex items-start">
+              <img
+                className=" mr-[20px] "
+                src="https://a6e8z9v6.stackpathcdn.com/traveltour/wp-content/uploads/2016/06/icon-10.png"
+                width="37"
+                height="39"
+                title="icon-10"
+              />
+              <div>
+                <div className=" pt-[5px] mb-[5px]">
+                  <p className=" text-[14px] font-[600] text-white leading-[1.55]">
+                    {" "}
+                    40,000+ Customers
+                  </p>
+                </div>
+                <div className=" mb-[20px]">
+                  <p className=" leading-[1.7] text-[#b9cdf3]">
+                    Morbi leo risus, porta ac
+                  </p>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div className=" w-full md:w-[24%] pt-[40px]">
-          <div className=" px-[20px] pb-[20px] flex items-start">
-            <img
-              className=" mr-[20px] "
-              src="https://a6e8z9v6.stackpathcdn.com/traveltour/wp-content/uploads/2016/06/icon-11.png"
-              width="37"
-              height="39"
-              title="icon-10"
-            />
-            <div>
-              <div className=" pt-[5px] mb-[5px]">
-                <p className=" text-[14px] font-[600] text-white leading-[1.55]">AWARD WINNING</p>
-              </div>
-              <div className=" mb-[20px]">
-                <p className=" leading-[1.7] text-[#b9cdf3]">Morbi leo risus, porta ac</p>
+          <div className=" w-full md:w-[24%] pt-[40px]">
+            <div className=" px-[20px] pb-[20px] flex items-start">
+              <img
+                className=" mr-[20px] "
+                src="https://a6e8z9v6.stackpathcdn.com/traveltour/wp-content/uploads/2016/06/icon-11.png"
+                width="37"
+                height="39"
+                title="icon-10"
+              />
+              <div>
+                <div className=" pt-[5px] mb-[5px]">
+                  <p className=" text-[14px] font-[600] text-white leading-[1.55]">
+                    AWARD WINNING
+                  </p>
+                </div>
+                <div className=" mb-[20px]">
+                  <p className=" leading-[1.7] text-[#b9cdf3]">
+                    Morbi leo risus, porta ac
+                  </p>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div className=" w-full md:w-[24%] pt-[40px]">
-          <div className=" px-[20px] pb-[20px] flex items-start">
-            <img
-              className=" mr-[20px] "
-              src="https://a6e8z9v6.stackpathcdn.com/traveltour/wp-content/uploads/2016/06/icon-12.png"
-              width="37"
-              height="39"
-              title="icon-10"
-            />
-            <div>
-              <div className=" pt-[5px] mb-[5px]">
-                <p className=" text-[14px] font-[600] text-white leading-[1.55]">SECURE PAYMENT</p>
-              </div>
-              <div className=" mb-[20px]">
-                <p className=" leading-[1.7] text-[#b9cdf3]">Morbi leo risus, porta ac</p>
+          <div className=" w-full md:w-[24%] pt-[40px]">
+            <div className=" px-[20px] pb-[20px] flex items-start">
+              <img
+                className=" mr-[20px] "
+                src="https://a6e8z9v6.stackpathcdn.com/traveltour/wp-content/uploads/2016/06/icon-12.png"
+                width="37"
+                height="39"
+                title="icon-10"
+              />
+              <div>
+                <div className=" pt-[5px] mb-[5px]">
+                  <p className=" text-[14px] font-[600] text-white leading-[1.55]">
+                    SECURE PAYMENT
+                  </p>
+                </div>
+                <div className=" mb-[20px]">
+                  <p className=" leading-[1.7] text-[#b9cdf3]">
+                    Morbi leo risus, porta ac
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-   </div>
   );
 };
 

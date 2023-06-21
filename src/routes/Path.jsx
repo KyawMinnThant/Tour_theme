@@ -23,7 +23,6 @@ import SouthAmerica from "../pages/destinations/SouthAmerica";
 import TourList from "../pages/TourList";
 import Test from "../components/Test";
 
-
 const Path = () => {
   const [modal, setModal] = useState(false);
   return (
@@ -40,14 +39,10 @@ const Path = () => {
 
         <Route path="/blogDetail" element={<BlogDetail />} />
 
-        
-
-
-        <Route path="/about" element={<About/>} />
+        <Route path="/about" element={<About />} />
         <Route path="/service" element={<Service />} />
         <Route path="/tour-list" element={<TourList />} />
         <Route path="/test" element={<Test />} />
-
 
         {/* destinations */}
         <Route path="/tour-destination/africa" element={<Africa />} />
@@ -62,8 +57,6 @@ const Path = () => {
           path="/tour-destination/southAmerica"
           element={<SouthAmerica />}
         />
-
-
       </Routes>
       <Footer />
     </div>

@@ -326,7 +326,7 @@ const TourList = () => {
           backgroundImage: `url(https://a6e8z9v6.stackpathcdn.com/traveltour/wp-content/uploads/2017/01/search-bg-2.jpg)`,
         }}
       >
-        <div className="hidden  md:flex md:flex-row lg:flex-row gap-5 justify-center bg-black p-10 opacity-100 bg-transparent items-center  top-[0px] left-0 right-0 z-50">
+        {/* <div className="hidden  md:flex md:flex-row lg:flex-row gap-5 justify-center bg-black p-10 opacity-100 bg-transparent items-center  top-[0px] left-0 right-0 z-50">
           <div className=" flex flex-col gap-3 ">
             <p className=" text-white font-bold ">Keywords</p>
             <input
@@ -403,11 +403,7 @@ const TourList = () => {
 
           <div className=" flex flex-col gap-3 ">
             <p className=" text-white font-bold">Date</p>
-            {/* <input
-              type="date"
-              className=" bg-[#585d6b] outline-none w-[200px] md:w-[100px] lg:w-full text-[#b9c1d5] p-4 shadow-md
-          "
-            /> */}
+
             <CustomDateInput className="w-[200px] md:w-[100px]" />
           </div>
 
@@ -415,6 +411,139 @@ const TourList = () => {
             {" "}
             Search
           </button>
+        </div> */}
+
+        <div className=" w-full">
+          <div className=" md:max-w-[1180px] max-w-[500px] mx-auto px-[15px] md:py-[30px]">
+            <div className="md:max-w-[1180px] max-w-[500px] px-[20px] pt-[50px] pb-[10px] md:w-full md:flex  mx-auto items-end  justify-between md:px-[18px] ">
+              <div className=" md:w-[15%] mb-[20px] md:mb-0">
+                <p className=" text-white mb-[10px] text-[13px] font-[800]">
+                  Keywords
+                </p>
+                <input
+                  type="text"
+                  className=" py-[12px] w-full px-[17px] border-2 bg-[#585D6B]"
+                />
+              </div>
+              <div className=" md:w-[15%] mb-[20px] md:mb-0  ">
+                <p className=" text-white mb-[10px] text-[13px] font-[800]">
+                  Activity
+                </p>
+
+                <select
+                  defaultValue=""
+                  name=" select_activity"
+                  className=" py-[12px] w-full px-[17px] border-2 bg-[#585D6B] "
+                >
+                  <option className=" overflow-hidden w-[10%]" value="Any">
+                    Any
+                  </option>
+                  <option
+                    className=" overflow-hidden w-[10%]"
+                    value="City Tours"
+                  >
+                    City Tours
+                  </option>
+                  <option
+                    className=" overflow-hidden w-[10%]"
+                    value="Cultural and Thematic Tours"
+                  >
+                    Cultural and Thematic Tours
+                  </option>
+                  <option
+                    className=" overflow-hidden w-[10%]"
+                    value="Family Friendly Tours"
+                  >
+                    Family Friendly Tours
+                  </option>
+                  <option
+                    className=" overflow-hidden w-[10%]"
+                    value="Holiday & Seasonal Tours"
+                  >
+                    Holiday & Seasonal Tours
+                  </option>
+                  <option
+                    className=" overflow-hidden w-[10%]"
+                    value="Indulgence & Luxury Tours"
+                  >
+                    Indulgence & Luxury Tours
+                  </option>
+                  <option
+                    className=" overflow-hidden w-[10%]"
+                    value="Outdoor Activities"
+                  >
+                    Outdoor Activities
+                  </option>
+                  <option
+                    className=" overflow-hidden w-[10%]"
+                    value="Relaxation Tours"
+                  >
+                    Relaxation Tours
+                  </option>
+                  <option
+                    className=" overflow-hidden w-[10%]"
+                    value="Wild & Adventure Tours"
+                  >
+                    Wild & Adventure Tours
+                  </option>
+                </select>
+              </div>
+
+              <div className=" md:w-[15%] mb-[20px] md:mb-0 ">
+                <p className=" text-white mb-[10px] text-[13px] font-[800]">
+                  Destinations
+                </p>
+
+                <select
+                  className=" py-[12px] w-full px-[17px] border-2 bg-[#585D6B] "
+                  defaultValue={""}
+                  name=" select_Destinations"
+                  id=""
+                >
+                  <option value="Any">Any</option>
+                  <option value="Africa">Africa</option>
+                  <option value="America">America</option>
+                  <option value="Asia">Asia</option>
+                  <option value="Eastern Europe">Eastern Europe</option>
+                  <option value="Europe">Europe</option>
+                  <option value="South America">South America</option>
+                </select>
+              </div>
+              <div className=" md:w-[15%] mb-[20px] md:mb-0">
+                <p className=" text-white mb-[10px] text-[13px] font-[800]">
+                  Durations
+                </p>
+
+                <select
+                  defaultValue={""}
+                  name=" select_durations"
+                  id=""
+                  className=" py-[12px] w-full px-[17px] border-2 bg-[#585D6B] "
+                >
+                  <option value="Any">Any</option>
+                  <option value="1-day-Tour">1 day Tour</option>
+                  <option value="2-4-days-Tour">2-4 days Tour</option>
+                  <option value="5-7-days-Tour">5-7 days Tour</option>
+                  <option value="7+-days-Tour">7 + days Tour</option>
+                </select>
+              </div>
+              <div className=" md:w-[15%] mb-[20px] md:mb-0">
+                <p className=" text-white mb-[10px] text-[13px] font-[800]">
+                  Date
+                </p>
+
+                <input
+                  type="date"
+                  className=" py-[12px] w-full px-[17px] border-2 bg-[#585D6B] "
+                />
+              </div>
+              <div className=" md:w-[15%] mb-[20px] md:mb-0">
+                <button className="  w-full py-[13px] px-[20px] mt-[32px] md:mt-0 text-white font-bold bg-[#388aee] ">
+                  Search
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
         {/* <div className=" container mx-auto px-4">
           <div className=" px-5 pb-9 flex gap-5 align-middle items-center">

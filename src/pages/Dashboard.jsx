@@ -11,7 +11,6 @@ import Carousel from "../components/Carousel";
 import Test from "../components/Test";
 import { IoIosArrowUp } from "react-icons/io";
 
-
 const Dashboard = () => {
   const [up, setUp] = useState(false);
 
@@ -25,9 +24,9 @@ const Dashboard = () => {
     }
   });
   return (
-    <div id="one" >
+    <div id="one">
       {/* <Carousel /> */}
-      <Test/>
+      <Test />
       <Ourservices />
       <Popular />
       <Destinations />
