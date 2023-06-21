@@ -68,5 +68,9 @@
   display: none; /* Remove the default arrow icon in Internet Explorer */
 }
 
-.date-input::-webkit-calendar-picker-indicator {
+.article {
+  transition: 3s;
+}
+.article:hover {
+  background: #00000098;
 }

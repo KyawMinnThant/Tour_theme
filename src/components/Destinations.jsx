@@ -101,28 +101,30 @@ const Destinations = () => {
         </div>
       </div>
 
-      <div className="container flex justify-center flex-wrap  mt-10 mx-auto">
+      <div className="flex justify-center flex-wrap flex-col align-middle items-center lg:grid mt-10 lg:grid-cols-5">
         {destinations?.map((place) => {
           return (
             <div
               key={place.id}
-              className=" mb-[40px] px-[20px] w-[430px] md:w-[383px] transition-all"
+              className={`mb-[40px] w-[430px] lg:w-auto transition-all`}
             >
               <div
-                className=" bg-cover overflow-hidden h-[516px] md:h-[416px]"
+                className={` bg-cover overflow-hidden h-[516px] lg:h-[350px] col-start-${place.id} col-span-1`}
                 style={{
                   backgroundImage: `url(${place.src})`,
                 }}
               >
                 {/* <img className="" src={place?.src} alt="" /> */}
-                <div className="h-[516px] md:h-[416px] pt-[470px] md:pt-[370px] hover:pt-[430px] hover:md:pt-[330px] card relative hover:border-b-4 hover:border-blue-500">
+                <div className="h-[516px] lg:h-[350px] pt-[470px] hover:pt-[430px] lg:pt-[304px] hover:lg:pt-[264px] card relative hover:border-b-4 hover:border-b-blue-500">
                   <div className="mx-[20px]">
                     <div className=" flex justify-between mb-[15px]">
-                      <p className=" flex justify-start items-center gap-1 text-lg text-white font-bold">
+                      <p className=" flex justify-start items-center text-truncate gap-1 text-lg text-white font-bold">
                         <TfiLocationPin />
                         {place.name}
                       </p>
-                      <p className=" text-blue-500">{place.tours} tours</p>
+                      <p className=" text-blue-500 text-truncate">
+                        {place.tours} tours
+                      </p>
                     </div>
                     <div className="">
                       <Link to={`/tour-destination/${place.link}`}>

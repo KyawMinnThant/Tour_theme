@@ -7,6 +7,8 @@ import "swiper/css/scrollbar";
 import "swiper/css/autoplay";
 import "swiper/css/effect-fade";
 import "swiper/css";
+import "animate.css";
+
 const Carousel = () => {
   const bg_img = [
     {
@@ -108,7 +110,7 @@ const Carousel = () => {
                     {item?.text_2()}
                   </p>
                   {item?.text_3 && (
-                    <p className="animate__animated animate__fadeIn text-[#bad9ff] ml-3 hidden lg:block md:hidden">
+                    <p className=" animate__animated animate__fadeIn text-[#bad9ff] ml-3 hidden lg:block md:hidden">
                       {item?.text_3}
                     </p>
                   )}

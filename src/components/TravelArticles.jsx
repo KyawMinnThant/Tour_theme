@@ -40,21 +40,30 @@ const TravelArticles = () => {
           </div>
         </div>
 
-        <div className="  flex lg:flex-row md:flex-row flex-col items-center mx-[50px] lg:items-start lg:mx-0 md:items-start md:mx-0 justify-center gap-[50px]">
+        <div className="  flex lg:flex-row md:flex-row flex-col items-center mx-[50px] lg:items-start lg:mx-0 md:items-start md:mx-0 justify-center gap-[50px] transition-all">
           {articles?.map((item, index) => (
             <div
               key={index}
-              className=" relative shadow-md hover:scale-[1.05] transition   cursor-pointer"
+              className="w-[250px] md:w-[250px] h-[250px] article overflow-hidden transition"
             >
-              <div className="opacity-0 transition   hover:opacity-60 flex flex-col gap-2 items-center justify-center absolute top-0 bg-black text-white  w-[100%] lg:w-[230px] md:w-[230px] h-[32vh]">
-                {/* <p className=" text-center">{item?.name}</p>
-                <p>{item?.date}</p> */}
-              </div>
-              <img
-                src={item?.url}
-                className="   transition  hover:scale-[1.05] w-[100%] lg:w-[250px] md:w-[250px]"
+              <div
+                className=" shadow-md hover:scale-[1.1] h-[250px] bg-cover transition-all cursor-pointer "
+                style={{
+                  backgroundImage: `url(${item?.url})`,
+                }}
+              >
+                <div className=" text-transparent hover:text-white w-[250px] h-[250px] px-14 py-14 hover:bg-[#00000098] transition-all flex flex-col justify-center align-middle items-center">
+                  <div className=" w-[150px] h-[150px] flex justify-center items-center align-middle flex-col">
+                    <p className=" mb-3 text-center">{item?.name}</p>
+                    <p className=" text-xs">{item?.date}</p>
+                  </div>
+                </div>
+                {/* <img
+                src=
+                className="transition  hover:scale-[1.05] w-[100%] overflow-hidden md:w-[250px]"
                 alt=""
-              />
+              /> */}
+              </div>
             </div>
           ))}
         </div>
