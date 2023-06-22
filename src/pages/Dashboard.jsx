@@ -10,6 +10,7 @@ import Booking from "../components/Booking";
 import Carousel from "../components/Carousel";
 import Test from "../components/Test";
 import { IoIosArrowUp } from "react-icons/io";
+import Slider from "../components/Slider";
 
 const Dashboard = () => {
   const [up, setUp] = useState(false);
@@ -27,6 +28,7 @@ const Dashboard = () => {
     <div id="one">
       {/* <Carousel /> */}
       <Test />
+      {/* <Slider /> */}
       <Ourservices />
       <Popular />
       <Destinations />

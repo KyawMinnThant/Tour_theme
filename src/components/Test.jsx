@@ -20,7 +20,7 @@ import "swiper/css";
 
 const bg_img = [
   {
-    img: `https://hips.hearstapps.com/hmg-prod/images/village-beneath-mountain-on-snow-covered-landscape-royalty-free-image-1658138339.jpg?crop=0.99953xw:1xh;center,top&resize=980:*`,
+    img: `https://a6e8z9v6.stackpathcdn.com/traveltour/wp-content/uploads/2017/01/slider-1.jpg`,
     text: () => {
       return (
         <p className=" text-white font-bold text-[40px] md:text-[70px] lg:text-[80px]">
@@ -101,7 +101,7 @@ const Test = () => {
         breakpoints={{
           400: {
             // navigation: false,
-            navigation: false
+            navigation: false,
           },
           768: {
             navigation: true,
@@ -120,8 +120,6 @@ const Test = () => {
               className="bg-cover bg-center xl:h-[680px] w-[500px] mx-auto md:w-full h-[266px] lg:h-[523px] md:h-[400px] max-h-none "
               style={{
                 backgroundImage: `url(${image.img})`,
-               
-
               }}
             >
               <div className=" w-full h-full">
