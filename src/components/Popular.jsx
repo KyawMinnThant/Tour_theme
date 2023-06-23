@@ -451,7 +451,7 @@ const Popular = () => {
         alt=""
         className=" relative w-full h-[1600px] object-cover md:h-[700px] lg:h-[900px]"
       /> */}
-      <div className=" w-full  bg-[#292C33] opacity-60">
+      <div className=" w-full  bg-[#292C33] opacity-80">
         <div className=" md:max-w-[1180px] max-w-[500px]   mx-auto px-[15px] md:py-[30px]">
           <div className="md:max-w-[1180px] max-w-[500px] px-[20px] pt-[50px] pb-[10px] md:w-full md:flex  mx-auto items-end  justify-between md:px-[18px] ">
             <div className=" md:w-[15%] mb-[20px] md:mb-0">
@@ -460,7 +460,8 @@ const Popular = () => {
               </p>
               <input
                 type="text"
-                className=" py-[12px] w-full px-[17px] border-2 bg-[#585D6B]"
+                placeholder="Keyword"
+                className=" py-[12px] text-white outline-none w-full px-[17px] border-2 bg-[#585D6B]"
               />
             </div>
             <div className=" md:w-[15%] mb-[20px] md:mb-0  ">
@@ -471,7 +472,7 @@ const Popular = () => {
               <select
                 defaultValue=""
                 name=" select_activity"
-                className=" py-[12px] w-full px-[17px] border-2 bg-[#585D6B] "
+                className=" py-[12px] text-white outline-none w-full px-[17px] border-2 bg-[#585D6B] "
               >
                 <option className=" overflow-hidden w-[10%]" value="Any">
                   Any
@@ -530,7 +531,7 @@ const Popular = () => {
               </p>
 
               <select
-                className=" py-[12px] w-full px-[17px] border-2 bg-[#585D6B] "
+                className=" py-[12px] text-white outline-none w-full px-[17px] border-2 bg-[#585D6B] "
                 defaultValue={""}
                 name=" select_Destinations"
                 id=""
@@ -553,7 +554,7 @@ const Popular = () => {
                 defaultValue={""}
                 name=" select_durations"
                 id=""
-                className=" py-[12px] w-full px-[17px] border-2 bg-[#585D6B] "
+                className="text-white outline-none py-[12px] w-full px-[17px] border-2 bg-[#585D6B] "
               >
                 <option value="Any">Any</option>
                 <option value="1-day-Tour">1 day Tour</option>
@@ -569,7 +570,7 @@ const Popular = () => {
 
               <input
                 type="date"
-                className=" py-[12px] w-full px-[17px] border-2 bg-[#585D6B] "
+                className="text-white outline-none py-[12px] w-full px-[17px] border-2 bg-[#585D6B] "
               />
             </div>
             <div className=" md:w-[15%] mb-[20px] md:mb-0">

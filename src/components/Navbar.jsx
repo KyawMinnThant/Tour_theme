@@ -77,7 +77,7 @@ const Navbar = ({ modal, setModal }) => {
       >
         {/* test with mantine */}
 
-        <div className=" w-full h-[66px] pt-[20px] lg:opacity-60 bg-black   ">
+        <div className=" w-full h-[66px] pt-[20px] lg:opacity-80 bg-black   ">
           <div className=" max-w-[500px] md:max-w-[1180px] mx-auto ">
             <div className=" px-[18px] mx-[15px] hidden sm:flex justify-between ">
               <div className=" hidden md:flex lg:gap-6 gap-2">
@@ -120,7 +120,7 @@ const Navbar = ({ modal, setModal }) => {
           className={
             up
               ? "lg:opacity-80 bg-black   w-full   h-[80px] items-center   "
-              : "lg:opacity-60 bg-black   w-full   h-[80px] items-center   "
+              : "lg:opacity-80 bg-black   w-full   h-[80px] items-center   "
           }
         >
           <div className="max-w-[500px] md:max-w-[1180px]  mx-auto ">
@@ -159,15 +159,30 @@ const Navbar = ({ modal, setModal }) => {
                         <Button>Pages</Button>
                       </Menu.Target>
 
-                      <Menu.Dropdown>
-                        <Link to={"/service"}>
-                          <Menu.Item>Our Service</Menu.Item>
+                      <Menu.Dropdown className=" border-none bg-gray-900">
+                        <Link
+                          to={"/service"}
+                          className="text-white hover:bg-gray-900 hover:text-gray-600 font-semibold"
+                        >
+                          <Menu.Item className="text-white hover:bg-gray-900  font-semibold">
+                            Our Service
+                          </Menu.Item>
                         </Link>
-                        <Link to={"/about"}>
-                          <Menu.Item>About</Menu.Item>
+                        <Link
+                          to={"/about"}
+                          className="text-white hover:bg-gray-900  font-semibold"
+                        >
+                          <Menu.Item className="text-white hover:bg-gray-900  font-semibold">
+                            About
+                          </Menu.Item>
                         </Link>
-                        <Link to={"/contact"}>
-                          <Menu.Item>Contact</Menu.Item>
+                        <Link
+                          to={"/contact"}
+                          className="text-white hover:bg-gray-900  font-semibold"
+                        >
+                          <Menu.Item className="text-white hover:bg-gray-900  font-semibold">
+                            Contact
+                          </Menu.Item>
                         </Link>
                       </Menu.Dropdown>
                     </Menu>
