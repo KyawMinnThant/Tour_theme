@@ -17,6 +17,7 @@ import "swiper/css/scrollbar";
 import "swiper/css/autoplay";
 import "swiper/css/effect-fade";
 import "swiper/css";
+import "animate.css";
 
 const bg_img = [
   {
@@ -47,7 +48,7 @@ const bg_img = [
     },
     text_2: () => {
       return (
-        <p className=" lg:text-[70px] text-[50px] md:text-[60px] text-white font-bold">
+        <p className=" lg:text-[70px] text-[40px] md:text-[60px] text-white font-bold">
           {" "}
           VACATION
         </p>
@@ -66,7 +67,7 @@ const bg_img = [
     },
     text_2: () => {
       return (
-        <p className=" text-white font-bold text-[35px] md:text-[50px] lg:text-[60px]">
+        <p className=" text-white font-bold text-[25px] md:text-[50px] lg:text-[60px]">
           {" "}
           The Hidden World
         </p>
@@ -93,24 +94,39 @@ const Test = () => {
     <div className=" bg-gray-500 swiper-container">
       <Swiper
         modules={[Navigation, Pagination, Autoplay, EffectFade]}
-        navigation
         pagination={{ clickable: true }}
         loop
-        autoplay={{ delay: 3000 }}
+        effect="fade"
+        autoplay={{
+          reverseDirection: true,
+          waitForTransition: true,
+          effect: "fade",
+          loop: "infinite",
+          speed: 5000,
+          delay: 5000,
+          fadeEffect: true,
+          disableOnInteraction: false,
+          pauseOnMouseEnter: true,
+        }}
         onSlideChange={(swiper) => setCurrentImageIndex(swiper.realIndex)}
+        navigation
         breakpoints={{
+          375: {
+            // navigation: false,
+            showSwitchArrows: false,
+          },
           400: {
             // navigation: false,
-            navigation: false,
+            showSwitchArrows: false,
           },
           768: {
-            navigation: true,
+            showSwitchArrows: true,
           },
           1024: {
-            navigation: true,
+            showSwitchArrows: true,
           },
           1440: {
-            navigation: true,
+            showSwitchArrows: true,
           },
         }}
       >
@@ -125,9 +141,25 @@ const Test = () => {
               <div className=" w-full h-full">
                 <div className=" max-w-[1180px] flex  h-full  items-center mx-auto">
                   <div className=" px-[18px] flex flex-col xl:mx-0   mx-[50px]  ">
-                    <h1> {image.text()}</h1>
-                    <p>{image.text_2()}</p>
-                    <span> {image.text_3 && <p>{image.text_3}</p>}</span>
+                    <h1 className="animate__animated animate__fadeIn">
+                      {" "}
+                      {image.text()}
+                    </h1>
+                    <p className="animate__animated animate__fadeIn">
+                      {image.text_2()}
+                    </p>
+                    <span>
+                      {" "}
+                      {image.text_3 && (
+                        <p className="animate__animated animate__fadeIn hidden lg:block md:hidden text-white">
+                          {image.text_3}
+                        </p>
+                      )}
+                    </span>
+                    <button className="animate__animated animate__fadeIn p-2 w-[fit-content] font-semibold shadow-sm md:py-3 md:px-5 lg:py-3 lg:px-5 text-white bg-[#388aee] mt-5 ml-2">
+                      {" "}
+                      Learn More
+                    </button>
                   </div>
                 </div>
               </div>

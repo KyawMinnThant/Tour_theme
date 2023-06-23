@@ -17,6 +17,13 @@ import "swiper/css";
 import { Background } from "react-parallax";
 import { HiddenDatesInput } from "@mantine/dates";
 const Popular = () => {
+  // if (window.innerWidth === 400) {
+  //   document.querySelector(".left-slide").style.display = "hidden";
+  //   document.querySelector(".right-slide").style.display = "hidden";
+  // } else {
+  //   document.querySelector(".left-slide").style.display = "hidden";
+  //   document.querySelector(".right-slide").style.display = "hidden";
+  // }
   // return (
   //   <div className=" relative h-[800px]" style={{backgroundImage:`url(https://a6e8z9v6.stackpathcdn.com/traveltour/wp-content/uploads/2016/06/search-bg.jpg)` } }>
   //     {/* <img
@@ -458,7 +465,7 @@ const Popular = () => {
             </div>
             <div className=" md:w-[15%] mb-[20px] md:mb-0  ">
               <p className=" text-white mb-[10px] text-[13px] font-[800]">
-              Activity
+                Activity
               </p>
 
               <select
@@ -519,7 +526,7 @@ const Popular = () => {
 
             <div className=" md:w-[15%] mb-[20px] md:mb-0 ">
               <p className=" text-white mb-[10px] text-[13px] font-[800]">
-              Destinations
+                Destinations
               </p>
 
               <select
@@ -539,7 +546,7 @@ const Popular = () => {
             </div>
             <div className=" md:w-[15%] mb-[20px] md:mb-0">
               <p className=" text-white mb-[10px] text-[13px] font-[800]">
-              Durations
+                Durations
               </p>
 
               <select
@@ -557,7 +564,7 @@ const Popular = () => {
             </div>
             <div className=" md:w-[15%] mb-[20px] md:mb-0">
               <p className=" text-white mb-[10px] text-[13px] font-[800]">
-              Date
+                Date
               </p>
 
               <input
@@ -573,93 +580,7 @@ const Popular = () => {
           </div>
         </div>
       </div>
-      {/* <div className=" flex flex-col md:flex-row lg:flex-row gap-5 justify-center bg-black p-10 opacity-60 items-center absolute top-[0px] left-0 right-0 z-50">
-      <div className=" flex flex-col gap-3 ">
-          <p className=" text-white font-bold ">Keywords</p>
-          <input
-            type="text"
-            placeholder="Keywords"
-            className=" bg-[#585d6b] w-[200px] md:w-[100px] lg:w-full  outline-none text-[#b9c1d5] p-4 shadow-md
-          "
-          />
-        </div>
 
-        <div className=" flex flex-col gap-3 ">
-          <p className=" text-white font-bold">Activity</p>
-          <select
-            defaultValue=""
-            name=" select_activity"
-            id=""
-            className=" bg-[#585d6b] w-[200px] md:w-[100px] lg:w-full outline-none text-[#b9c1d5] p-4 shadow-md"
-          >
-            <option value="Any">Any</option>
-            <option value="City Tours">City Tours</option>
-            <option value="Cultural and Thematic Tours">
-              Cultural and Thematic Tours
-            </option>
-            <option value="Family Friendly Tours">Family Friendly Tours</option>
-            <option value="Holiday & Seasonal Tours">
-              Holiday & Seasonal Tours
-            </option>
-            <option value="Indulgence & Luxury Tours">
-              Indulgence & Luxury Tours
-            </option>
-            <option value="Outdoor Activities">Outdoor Activities</option>
-            <option value="Relaxation Tours">Relaxation Tours</option>
-            <option value="Wild & Adventure Tours">
-              Wild & Adventure Tours
-            </option>
-          </select>
-        </div>
-
-        <div className=" flex flex-col gap-3 ">
-          <p className=" text-white font-bold">Destinations</p>
-          <select
-            defaultValue={""}
-            name=" select_Destinations"
-            id=""
-            className=" bg-[#585d6b] outline-none text-[#b9c1d5] w-[200px] md:w-[100px] lg:w-full p-4 shadow-md"
-          >
-            <option value="Any">Any</option>
-            <option value="Africa">Africa</option>
-            <option value="America">America</option>
-            <option value="Asia">Asia</option>
-            <option value="Eastern Europe">Eastern Europe</option>
-            <option value="Europe">Europe</option>
-            <option value="South America">South America</option>
-          </select>
-        </div>
-
-        <div className=" flex flex-col gap-3 ">
-          <p className=" text-white font-bold">Durations</p>
-          <select
-            defaultValue={""}
-            name=" select_durations"
-            id=""
-            className=" bg-[#585d6b] outline-none text-[#b9c1d5] w-[200px] md:w-[100px] lg:w-full p-4 shadow-md"
-          >
-            <option value="Any">Any</option>
-            <option value="1-day-Tour">1 day Tour</option>
-            <option value="2-4-days-Tour">2-4 days Tour</option>
-            <option value="5-7-days-Tour">5-7 days Tour</option>
-            <option value="7+-days-Tour">7 + days Tour</option>
-          </select>
-        </div>
-
-        <div className=" flex flex-col gap-3 ">
-          <p className=" text-white font-bold">Date</p>
-          <input
-            type="date"
-            className=" bg-[#585d6b] outline-none w-[200px] md:w-[100px] lg:w-full text-[#b9c1d5] p-4 shadow-md
-          "
-          />
-        </div>
-
-        <button className=" py-4 px-6 mt-8 w-[200px] lg:w-[200px] md:w-[100px] text-white font-bold bg-[#388aee] ">
-          {" "}
-          Search
-        </button>
-      </div> */}
       <div className="  md:max-w-[1180px] mx-auto py-20">
         <div className=" px-5 pb-14">
           <div className=" flex flex-row md:flex-row md:items-center md:align-middle lg:flex-row gap-3 items-start lg:items-center">
@@ -679,23 +600,26 @@ const Popular = () => {
             modules={[Navigation, Pagination, Autoplay, EffectFade]}
             spaceBetween={80}
             loop={true}
-        
+            navigation
             breakpoints={{
               400: {
                 slidesPerView: 1,
-                // navigation: false,
+                showSwitchArrows: false,
               },
               768: {
                 slidesPerView: 2,
+                showSwitchArrows: true,
               },
               1024: {
                 slidesPerView: 3,
+                showSwitchArrows: true,
               },
               1440: {
                 slidesPerView: 3,
+                showSwitchArrows: true,
               },
             }}
-            navigation
+            pagination
             autoplay={{
               reverseDirection: false,
               waitForTransition: true,
@@ -710,7 +634,7 @@ const Popular = () => {
               crossFade: true,
             }}
             // pagination={{ clickable: true }}
-            
+
             className=" transition-all "
           >
             <div className=" flex w-full">

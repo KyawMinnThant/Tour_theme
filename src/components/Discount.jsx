@@ -36,7 +36,7 @@ const Discount = () => {
         <div className="  md:w-[50%]"></div>
         <div className=" md:w-[50%]">
           <div className=" px-[20px] pb-[15px] lg:flex">
-            <div className=" text-[48px] font-[700] ">DISCOUNT</div>
+            <div className=" text-[48px] font-[700] text-white">DISCOUNT</div>
             <span className=" text-[48px] font-[700] text-[#ffb43e]">
               10-30% Off
             </span>

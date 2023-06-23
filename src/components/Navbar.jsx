@@ -239,20 +239,20 @@ const Navbar = ({ modal, setModal }) => {
                           ) : (
                             <div className="">
                               <Drawer.Header className=" bg-[#1f1f1f]">
-                                <Drawer.CloseButton className=" m-5 transition hover:bg-[#1f1f1f]  hover:text-gray-200  text-gray-400 " />
+                                <Drawer.CloseButton className=" m-2 transition hover:bg-[#1f1f1f]  hover:text-gray-200  text-gray-400 " />
                               </Drawer.Header>
                               <Drawer.Body className=" mb-10">
-                                <div className=" flex flex-col gap-1 text-gray-400  ">
+                                <div className=" flex flex-col gap-3 text-gray-400  ">
                                   <NavLink
                                     to={"/"}
-                                    className={`flex active:text-gray-200 action justify-between items-center transition hover:text-gray-200 p-5 font-bold  border-b-2 border-t-0 border-s-0 border-e-0 border-gray-400 cursor-pointer `}
+                                    className={`flex active:text-gray-200 action justify-between items-center transition hover:text-gray-200 p-2 font-bold  border-b-2 border-t-0 border-s-0 border-e-0 border-gray-400 cursor-pointer `}
                                   >
                                     <p>Home</p>
                                     <AiOutlineRight className=" text-gray-400" />
                                   </NavLink>
                                   <NavLink
                                     onClick={() => setpage(!page)}
-                                    className={`flex active:text-gray-200 action justify-between items-center transition hover:text-gray-200 p-5 font-bold border-b-2 border-t-0 border-s-0 border-e-0  border-gray-400 cursor-pointer `}
+                                    className={`flex active:text-gray-200 action justify-between items-center transition hover:text-gray-200 p-2 font-bold border-b-2 border-t-0 border-s-0 border-e-0  border-gray-400 cursor-pointer `}
                                   >
                                     {" "}
                                     <p>Pages </p>
@@ -260,14 +260,14 @@ const Navbar = ({ modal, setModal }) => {
                                   </NavLink>
                                   <NavLink
                                     to={"/tour-list"}
-                                    className={`flex active:text-gray-200 action justify-between items-center transition hover:text-gray-200 p-5 font-bold border-b-2 border-t-0 border-s-0 border-e-0  border-gray-400 cursor-pointer `}
+                                    className={`flex active:text-gray-200 action justify-between items-center transition hover:text-gray-200 p-2 font-bold border-b-2 border-t-0 border-s-0 border-e-0  border-gray-400 cursor-pointer `}
                                   >
                                     {" "}
                                     <p>Tour List</p>
                                     <AiOutlineRight className=" text-gray-400" />
                                   </NavLink>
                                   <NavLink
-                                    className={`flex active:text-gray-200 action justify-between items-center transition hover:text-gray-200 p-5 font-bold border-b-2 border-t-0 border-s-0 border-e-0  border-gray-400 cursor-pointer `}
+                                    className={`flex active:text-gray-200 action justify-between items-center transition hover:text-gray-200 p-2 font-bold border-b-2 border-t-0 border-s-0 border-e-0  border-gray-400 cursor-pointer `}
                                     to={"/destinations"}
                                   >
                                     <p>Destinations</p>
@@ -275,7 +275,7 @@ const Navbar = ({ modal, setModal }) => {
                                   </NavLink>
 
                                   <NavLink
-                                    className={`flex active:text-gray-200 action justify-between items-center transition hover:text-gray-200 p-5 font-bold border-b-2 border-t-0 border-s-0 border-e-0  border-gray-400 cursor-pointer `}
+                                    className={`flex active:text-gray-200 action justify-between items-center transition hover:text-gray-200 p-2 font-bold border-b-2 border-t-0 border-s-0 border-e-0  border-gray-400 cursor-pointer `}
                                   >
                                     {" "}
                                     <p>Tour System</p>
@@ -283,7 +283,7 @@ const Navbar = ({ modal, setModal }) => {
                                   </NavLink>
                                   <NavLink
                                     to={"/blog"}
-                                    className={`flex active:text-gray-200 action justify-between items-center transition hover:text-gray-200 p-5 font-bold border-b-2 border-t-0 border-s-0 border-e-0  border-gray-400 cursor-pointer `}
+                                    className={`flex active:text-gray-200 action justify-between items-center transition hover:text-gray-200 p-2 font-bold border-b-2 border-t-0 border-s-0 border-e-0  border-gray-400 cursor-pointer `}
                                   >
                                     {" "}
                                     <p>Blog</p>

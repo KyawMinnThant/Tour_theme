@@ -6,7 +6,7 @@ import "./App.css";
 
 const App = () => {
   return (
-    <div className="">
+    <div className=" overflow-x-hidden">
       <Path />
     </div>
   );
