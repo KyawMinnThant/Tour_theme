@@ -17,3 +17,7 @@
 .animate__delay-4000s {
   animation-delay: calc(1.4s - var(--animate-delay));
 }
+
+.animate__delay-5000s {
+  animation-delay: 1s;
+}
