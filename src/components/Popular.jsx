@@ -451,7 +451,7 @@ const Popular = () => {
         alt=""
         className=" relative w-full h-[1600px] object-cover md:h-[700px] lg:h-[900px]"
       /> */}
-      <div className=" w-full  bg-[#292C33] opacity-80">
+      <div className=" w-full bg-black/50">
         <div className=" md:max-w-[1180px] max-w-[500px]   mx-auto px-[15px] md:py-[30px]">
           <div className="md:max-w-[1180px] max-w-[500px] px-[20px] pt-[50px] pb-[10px] md:w-full md:flex  mx-auto items-end  justify-between md:px-[18px] ">
             <div className=" md:w-[15%] mb-[20px] md:mb-0">
