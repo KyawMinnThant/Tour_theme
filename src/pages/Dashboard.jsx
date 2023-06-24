@@ -11,6 +11,7 @@ import Booking from "../components/Booking";
 import Test from "../components/Test";
 import { IoIosArrowUp } from "react-icons/io";
 import Slider from "../components/Slider";
+// import Carousel from "../components/Carousel";
 
 const Dashboard = () => {
   const [up, setUp] = useState(false);

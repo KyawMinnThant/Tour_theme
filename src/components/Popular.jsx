@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { AiOutlineClockCircle, AiFillStar } from "react-icons/ai";
 import { FaFilm, FaStarHalfAlt } from "react-icons/fa";
 import { Menu, Button, Text } from "@mantine/core";
@@ -16,6 +16,7 @@ import "swiper/css";
 import "swiper/css";
 import { Background } from "react-parallax";
 import { HiddenDatesInput } from "@mantine/dates";
+import Popularnav from "../pages/Popularnav";
 const Popular = () => {
   // if (window.innerWidth === 400) {
   //   document.querySelector(".left-slide").style.display = "hidden";
@@ -23,6 +24,7 @@ const Popular = () => {
   // } else {
   //   document.querySelector(".left-slide").style.display = "hidden";
   //   document.querySelector(".right-slide").style.display = "hidden";
+
   // }
   // return (
   //   <div className=" relative h-[800px]" style={{backgroundImage:`url(https://a6e8z9v6.stackpathcdn.com/traveltour/wp-content/uploads/2016/06/search-bg.jpg)` } }>
@@ -582,7 +584,7 @@ const Popular = () => {
         </div>
       </div>
 
-      <div className="  md:max-w-[1180px] mx-auto py-20">
+      <div className="  md:max-w-[1180px]   mx-auto py-20">
         <div className=" px-5 pb-14">
           <div className=" flex flex-row md:flex-row md:items-center md:align-middle lg:flex-row gap-3 items-start lg:items-center">
             <p className=" text-2xl lg:text-2xl md:text2xl text-white">
@@ -596,12 +598,11 @@ const Popular = () => {
             </Link>
           </div>
         </div>
-        <div className=" px-5 max-h-[600px] w-full">
+        <div className=" px-5 max-h-[600px] relative w-full">
           <Swiper
             modules={[Navigation, Pagination, Autoplay, EffectFade]}
             spaceBetween={80}
             loop={true}
-            navigation
             breakpoints={{
               400: {
                 slidesPerView: 1,
@@ -638,7 +639,7 @@ const Popular = () => {
 
             className=" transition-all "
           >
-            <div className=" flex w-full">
+            <div className=" flex w-full ">
               <SwiperSlide className=" md:w-[45%] lg:w-[30%]">
                 <div className=" shadow-md bg-white w-full md:h-[380px]   lg:h-[410px] ">
                   <div className="">
@@ -878,7 +879,8 @@ const Popular = () => {
                   </div>
                 </div>
               </SwiperSlide>
-            </div>
+            </div>{" "}
+            <Popularnav />
           </Swiper>
         </div>
       </div>
