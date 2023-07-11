@@ -79,7 +79,7 @@ const Navbar = ({ modal, setModal }) => {
 
         <div className=" w-full h-[66px] pt-[20px] lg:opacity-80 bg-black   ">
           <div className=" max-w-[500px] md:max-w-[1180px] mx-auto ">
-            <div className=" px-[18px] mx-[15px] hidden sm:flex justify-between ">
+            <div className=" px-[18px] mx-[15px] md:flex md:justify-between ">
               <div className=" hidden md:flex lg:gap-6 gap-2">
                 <div className=" flex gap-2 items-center">
                   <BsFillTelephoneFill className=" text-white" />
@@ -92,23 +92,23 @@ const Navbar = ({ modal, setModal }) => {
                 </div>
               </div>
 
-              <div className="">
-                <div className=" flex lg:gap-6 gap-2  items-center ">
-                  <FaFacebookF className=" text-[#468ae7]" />
-                  <FaFlickr className=" text-[#468ae7]" />
-                  <AiOutlineGoogle className=" text-[#468ae7]" />
-                  <BsTwitter className=" text-[#468ae7]" />
-                  <div className=" flex gap-2">
-                    <AiOutlineLock className=" text-[#468ae7] text-2xl" />
-                    <p className=" text-white font-bold hidden md:block">
-                      Login
-                    </p>
-                  </div>
-                  <div className=" flex gap-2">
-                    <BsFillPersonFill className=" text-[#468ae7] text-2xl" />
-                    <p className=" text-white font-bold hidden md:block">
-                      Signup
-                    </p>
+              <div className=" flex md:gap-6  items-center justify-around ">
+                <div className=" flex gap-2 ">
+                  <FaFacebookF className=" md:text-lg text-sm  text-[#468ae7]" />
+                  <FaFlickr className="md:text-lg text-sm  text-[#468ae7]" />
+                  <AiOutlineGoogle className="md:text-lg text-sm  text-[#468ae7]" />
+                  <BsTwitter className="md:text-lg text-sm  text-[#468ae7]" />
+                </div>
+                <div className=" flex gap-3">
+                  <Link to={"/login"}>
+                    <div className=" flex gap-2 items-center">
+                      <AiOutlineLock className=" text-[#468ae7] md:text-2xl" />
+                      <p className=" text-white font-bold text-sm">Login</p>
+                    </div>
+                  </Link>
+                  <div className=" flex gap-2 items-center">
+                    <BsFillPersonFill className=" text-[#468ae7] md:text-2xl" />
+                    <p className=" text-white font-bold text-sm">Signup</p>
                   </div>
                 </div>
               </div>

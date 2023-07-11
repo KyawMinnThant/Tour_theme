@@ -597,6 +597,7 @@ const Popular = () => {
           </div>
         </div>
         <div className=" px-5 max-h-[600px] w-full">
+       
           <Swiper
             modules={[Navigation, Pagination, Autoplay, EffectFade]}
             spaceBetween={80}

@@ -64,6 +64,38 @@
   padding-right: 20px; /* Adjust the value to align the icon properly */
 }
 
+.mantine-1fzet7j {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 17px;
+  color: #5c5c5c;
+  word-break: break-word;
+  cursor: default;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.mantine-b11773 {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 500;
+  color: #5c5c5c;
+  margin-bottom: 17px;
+  word-break: break-word;
+  cursor: default;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.mantine-1ucgt9c {
+  border-radius: 0;
+}
+.mantine-839gn5 {
+  border-radius: 0;
+}
+.mantine-1rb3lhr {
+  display: none;
+}
+
 .custom-select::-ms-expand {
   display: none; /* Remove the default arrow icon in Internet Explorer */
 }
@@ -73,4 +105,18 @@
 }
 .article:hover {
   background: #00000098;
+}
+
+.heightForBg {
+  height: 158px;
+}
+@media (min-width: 768px) {
+  .heightForBg {
+    height: 260.39px;
+  }
+}
+@media (min-width: 1024px) {
+  .heightForBg {
+    height: 408.19px;
+  }
 }
