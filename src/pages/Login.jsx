@@ -2,6 +2,7 @@ import React from "react";
 import bgImage from "../assets/section-bg-4.jpg";
 import { useForm } from "@mantine/form";
 import { PasswordInput, TextInput } from "@mantine/core";
+import { Link } from "react-router-dom";
 
 const Login = () => {
   const form = useForm({
@@ -33,10 +34,10 @@ const Login = () => {
           </div>
         </div>
       </div>
-      <div className=" md:w-full max-w-[500px]    md:max-w-[1180px] mx-auto mb-[50px] mt-10">
+      <div className=" md:w-full max-w-[500px]    md:max-w-[1180px] mx-auto mb-[50px] mt-10 px-[30px]">
         <form onSubmit={form.onSubmit((values) => console.log(values))}>
           <div className=" grid grid-cols-1 gap-[30px]">
-            <div className=" grid grid-cols-2 gap-[30px]">
+            <div className=" grid grid-cols-1 md:grid-cols-2 gap-[30px]">
               <TextInput
                 label="Username or E-Mail"
                 size="md"
@@ -51,13 +52,27 @@ const Login = () => {
               />
             </div>
             <div>
-              <button type="submit" className=" w-full text-[12.5px] font-[600]  bg-[#485DA1] py-[15px] text-white">
+              <button
+                type="submit"
+                className=" w-full text-[12.5px] font-[600]  bg-[#485DA1] py-[15px] text-white"
+              >
                 SIGN IN!
               </button>
             </div>
           </div>
           <p className=" mt-3 w-full text-end">Forget Password?</p>
         </form>
+        <hr />
+        <div>
+          <h1 className=" text-center mb-[12px] mt-[32px] font-[700]">
+            DO NOT HAVE AN ACCOUNT?
+          </h1>
+          <Link to={"/register"}>
+            <p className=" text-center text-blue-600 hover:text-blue-400 text-xs font-[500]">
+              CREATE AN ACCOUNT
+            </p>
+          </Link>
+        </div>
       </div>
     </>
   );

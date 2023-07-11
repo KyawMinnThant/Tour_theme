@@ -23,6 +23,7 @@ import SouthAmerica from "../pages/destinations/SouthAmerica";
 import TourList from "../pages/TourList";
 import Test from "../components/Test";
 import Login from "../pages/Login";
+import Register from "../pages/Register";
 
 const Path = () => {
   const [modal, setModal] = useState(false);
@@ -35,6 +36,7 @@ const Path = () => {
       <Routes>
         <Route path="/" element={<Dashboard />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
 
         <Route path="/blog" element={<Blog />} />
         <Route path="/destinations" element={<Destinations />} />

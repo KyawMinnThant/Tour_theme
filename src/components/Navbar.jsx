@@ -106,10 +106,12 @@ const Navbar = ({ modal, setModal }) => {
                       <p className=" text-white font-bold text-sm">Login</p>
                     </div>
                   </Link>
-                  <div className=" flex gap-2 items-center">
-                    <BsFillPersonFill className=" text-[#468ae7] md:text-2xl" />
-                    <p className=" text-white font-bold text-sm">Signup</p>
-                  </div>
+                  <Link to={"/register"}>
+                    <div className=" flex gap-2 items-center">
+                      <BsFillPersonFill className=" text-[#468ae7] md:text-2xl" />
+                      <p className=" text-white font-bold text-sm">Signup</p>
+                    </div>
+                  </Link>
                 </div>
               </div>
             </div>

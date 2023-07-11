@@ -7,11 +7,12 @@
 * {
   padding: 0;
   margin: 0;
+  font-family: "Poppins", sans-serif;
 }
 .overlay-about {
   opacity: 0;
   background: rgba(0, 0, 0, 0.5);
-  height: 312.11px;
+  height: 73%;
   position: absolute;
   top: 0;
   right: 0;
@@ -94,6 +95,10 @@
 }
 .mantine-1rb3lhr {
   display: none;
+}
+
+.mantine-1yax2h6 {
+  border-radius: 0;
 }
 
 .custom-select::-ms-expand {
