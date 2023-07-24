@@ -210,7 +210,7 @@ const bg_img = [
     text_3: "Bern,Lucern,Zurich,Zermatt,Metahorn,Jungfrau",
   },
   {
-    img: `https://images.unsplash.com/photo-1499678329028-101435549a4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80`,
+    img: `https://a6e8z9v6.stackpathcdn.com/traveltour/wp-content/uploads/2017/01/slider-2.jpg`,
     text: () => {
       return (
         <p className="text-[#bad9ff] font-bold lg:text-[40px] md:text-[35px] text-[25px]">
@@ -229,7 +229,7 @@ const bg_img = [
     text_3: "ITALY,VENICE,ROME,MILAN",
   },
   {
-    img: `https://live.staticflickr.com/4256/34476186234_b2e5e9fc71_b.jpg`,
+    img: `https://a6e8z9v6.stackpathcdn.com/traveltour/wp-content/uploads/2017/01/slider-3.jpg`,
     text: () => {
       return (
         <p className="text-white lg:text-[40px] text-[25px] md:text-[35px]">
@@ -372,8 +372,8 @@ const Test = () => {
                         )}
                       </span>
                       <button className=" w-fit rounded-[3px]  shadow-sm  text-white leading-[12px] font-[900]  bg-[#388aee] text-[13px] mt-5 px-[32px] py-[20px] ">
-                       LEARN MORE
-                 </button>
+                        LEARN MORE
+                      </button>
                     </div>
                   </div>
                 </div>

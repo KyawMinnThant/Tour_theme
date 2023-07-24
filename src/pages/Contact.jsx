@@ -9,7 +9,7 @@ import {
   FaTwitter,
   FaLocationArrow,
 } from "react-icons/fa";
-import {IoIosArrowUp} from "react-icons/io"
+import { IoIosArrowUp } from "react-icons/io";
 import { CiMail } from "react-icons/ci";
 import { IoMdMail } from "react-icons/io";
 
@@ -40,15 +40,15 @@ const Contact = () => {
   return (
     <>
       <div
-        className=" h-[1349px] bg-cover bg-no-repeat bg-center  "
-        style={{ backgroundImage: `url(${bgImage})`, height: 606.75 }}
+        className=" h-fit bg-cover bg-no-repeat bg-center  "
+        style={{ backgroundImage: `url(${bgImage})` }}
       >
         <div
           id="one"
-          className="flex h-full  items-center max-w-[500px] md:w-full px-[15px] md:max-w-[1180px] mx-auto"
+          className="flex h-full pt-[350px] pb-[160px] items-center max-w-[500px] md:w-full px-[15px] md:max-w-[1180px] mx-auto"
         >
           <div className="  flex animate__duration-slow animate__backInUp animate__animated  flex-col leading-extra-loose  ">
-            <h1 className=" mx-[15px]  text-white     text-[75px] font-bold tracking-wide ">
+            <h1 className=" mx-[15px]  text-white     text-[40px] md:text-[76px] font-bold tracking-wide ">
               Contact Us
             </h1>
             <p className=" mx-[15px] mt-[25px]  text-[#fff] italic     text-[25px]  tracking-wide ">

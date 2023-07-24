@@ -24,6 +24,12 @@
   -webkit-transition: opacity 300ms;
 }
 
+.forSticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
 .overlay-about:hover {
   opacity: 1;
 }

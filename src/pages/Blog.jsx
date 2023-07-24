@@ -415,7 +415,7 @@ const Blog = () => {
           </div>
         </div>
 
-        <div className="  w-full  md:w-[35%] mr-[15px] pt-[60px] px-[15px]">
+        <div className="   w-full  md:w-[35%] mr-[15px] pt-[60px] px-[15px]">
           <div className=" mb-[50px]">
             <div className=" mb-[28px]">
               <h2 className=" text-[#383838] text-[16px] font-[700] mr-[28px] inline-block">

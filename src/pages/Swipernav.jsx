@@ -7,9 +7,9 @@ const Swipernav = () => {
   const navigations = () => {
     // absolute lg:top-[330px] md:top-[150px] left-10 md:left-0
     return (
-      <div className="  justify-between hidden md:flex   w-full h-full absolute top-[50%]  ">
+      <div className="  justify-between hidden md:flex  opacity-50  w-full h-full absolute top-[50%]  ">
         <AiOutlineLeft
-          className=" cursor-pointer text-[50px] text-white shadow-lg"
+          className="  cursor-pointer text-[50px] text-white shadow-lg"
           onClick={() => swiper?.slidePrev()}
         />
         <AiOutlineRight

@@ -222,7 +222,7 @@ const About = () => {
           </div>
         </div>
 
-        <div className=" grid grid-cols-1 md:grid-cols-2 relative">
+        <div className=" grid grid-cols-1 md:grid-cols-2 items-center relative">
           <Parallax
             bgImage="https://a6e8z9v6.stackpathcdn.com/traveltour/wp-content/uploads/2016/06/shutterstock_74901229.jpg"
             strength={200}
@@ -230,7 +230,7 @@ const About = () => {
             <div className="w-full h-[360px] md:h-[925px] lg:h-[690.238px]"></div>
           </Parallax>
 
-          <div className="  pt-20 pb-10 md:pb-0 bg-about-pair">
+          <div className="  ">
             <div className="max-w-[600px]  px-[30px] wow animate__fadeInRight">
               <p className=" text-3xl lg:text-4xl font-bold text-gray-800">
                 Pharetra Etiam Inceptos
@@ -285,8 +285,8 @@ const About = () => {
           </div>
         </div>
 
-        <div className=" grid grid-cols-1 md:grid-cols-2">
-          <div className="  py-10 ">
+        <div className=" grid grid-cols-1 md:grid-cols-2 ">
+          <div className=" py-10">
             <div className="max-w-[600px]  px-[30px] ml-auto wow animate__fadeInLeft">
               <p className=" text-3xl font-bold">About Services</p>
               <div>

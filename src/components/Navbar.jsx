@@ -66,18 +66,20 @@ const Navbar = ({ modal, setModal }) => {
   });
 
   return (
-    <div>
+    <div className=" relative">
       <div className=" h-[145px] lg:hidden">hello</div>
+
+      {/* work */}
       <div
         className={
           up
-            ? " fixed top-[-44px] lg:top-[-64px] w-full z-[1000]"
-            : " absolute  top-0 w-full z-[1000]"
+            ? " fixed top-[-66px] lg:top-[-68px] w-full z-[1000]"
+            : " absolute top-0 w-full z-[1000]"
         }
       >
-        {/* test with mantine */}
-
-        <div className=" w-full h-[66px] pt-[20px] lg:opacity-80 bg-black   ">
+        <div
+          className={`lg:bg-black/50 xs:bg-black w-full h-[66px] pt-[20px]  `}
+        >
           <div className=" max-w-[500px] md:max-w-[1180px] mx-auto ">
             <div className=" px-[18px] mx-[15px] md:flex md:justify-between ">
               <div className=" hidden md:flex lg:gap-6 gap-2">
@@ -119,13 +121,11 @@ const Navbar = ({ modal, setModal }) => {
         </div>
 
         <div
-          className={
-            up
-              ? "lg:opacity-80 bg-black   w-full   h-[80px] items-center   "
-              : "lg:opacity-80 bg-black   w-full   h-[80px] items-center   "
-          }
+          className={`  ${
+            up ? "bg-black/80" : "lg:bg-black/50 xs:bg-black"
+          }   w-full   h-[80px] items-center   `}
         >
-          <div className="max-w-[500px] md:max-w-[1180px]  mx-auto ">
+          <div className="max-w-[500px] md:max-w-[1180px] pt-[20px] lg:pt-0 mx-auto ">
             <div className=" px-[18px] flex   justify-between items-center  mx-[15px]">
               <div className=" ">
                 <img
@@ -328,11 +328,9 @@ const Navbar = ({ modal, setModal }) => {
             </div>
           </div>
         </div>
-
-        {/* {clickhover === true && <Dropdown />}
-      {tourhover === true && <Tourdropdown />} */}
-        {/* <p className=" menudrop text-3xl text-white hidden"> Hello</p> */}
       </div>
+
+      {/* workEnd */}
     </div>
   );
 };

@@ -48,7 +48,7 @@ const cards = [
 
 const Service = () => {
   return (
-    <div className=" bg-[#E1E1E1]">
+    <div className=" ">
       {/* <div className=" bg-about-main bg-cover bg-center h-[200px] md:h-[499px] w-auto relative">
         <div className=" md:w-full max-w-[500px]  h-full  flex flex-col justify-center  md:max-w-[1180px] mx-auto px-[30px]">
           <p className=" h-1 font-bold text-3xl md:text-6xl  text-white">
@@ -77,16 +77,17 @@ const Service = () => {
           </div>
         </div>
       </div>
-
-      <div className=" md:w-full max-w-[500px]    md:max-w-[1180px] mx-auto mb-[50px] mt-10 px-[30px]">
-        <div className=" lg:h-[500.238px] grid grid-cols-1 md:grid-cols-2 relative">
+      {/* md:w-full max-w-[500px]    md:max-w-[1180px] mx-auto mb-[50px] mt-10 px-[30px] */}
+      {/* */}
+      <div className=" ">
+        <div className=" lg:h-[500.238px] grid grid-cols-1 md:grid-cols-2 relative ">
           <Parallax
             bgImage="https://a6e8z9v6.stackpathcdn.com/traveltour/wp-content/uploads/2016/06/shutterstock_210601591.jpg"
             strength={200}
           >
             <div className="w-full  md:h-[925px] lg:h-[900.238px]"></div>
           </Parallax>
-          <div className="  pt-20 pb-10 md:pb-0 bg-about-pair">
+          <div className="  max-w-[600px] my-auto px-[30px] ">
             <div className="wow animate__fadeInRight">
               <p className=" text-lg font-normal text-gray-500 mb-5">
                 Our Story
@@ -107,7 +108,7 @@ const Service = () => {
         </div>
 
         <div className=" lg:h-[500.238px] grid grid-cols-1 md:grid-cols-2 relative overflow-hidden">
-          <div className="  pt-20 pb-10 md:pb-0 bg-about-pair">
+          <div className="  max-w-[600px] my-auto px-[30px] ml-auto ">
             <div className="wow animate__fadeInLeft">
               <p className=" text-lg font-normal text-gray-500 mb-5">
                 Philosophy
@@ -141,7 +142,7 @@ const Service = () => {
           >
             <div className="w-full  md:h-[925px] lg:h-[900.238px]"></div>
           </Parallax>
-          <div className="  pt-20 pb-10 md:pb-0 bg-about-pair">
+          <div className="  max-w-[600px] my-auto px-[30px] ">
             <div className="wow animate__fadeInRight">
               <p className=" text-lg font-normal text-gray-500 mb-5">
                 Strategy

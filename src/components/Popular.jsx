@@ -453,7 +453,7 @@ const Popular = () => {
       /> */}
       <div className=" w-full bg-black/50">
         <div className=" md:max-w-[1180px] max-w-[500px]   mx-auto px-[15px] md:py-[30px]">
-          <div className="md:max-w-[1180px] max-w-[500px] px-[20px] pt-[50px] pb-[10px] md:w-full md:flex  mx-auto items-end  justify-between md:px-[18px] ">
+          <div className="md:max-w-[1180px] max-w-[500px] px-[20px] py-[30px] md:w-full md:flex  mx-auto items-end  justify-between md:px-[18px] ">
             <div className=" md:w-[15%] mb-[20px] md:mb-0">
               <p className=" text-white mb-[10px] text-[13px] font-[800]">
                 Keywords
@@ -597,7 +597,6 @@ const Popular = () => {
           </div>
         </div>
         <div className=" px-5 max-h-[600px] w-full">
-       
           <Swiper
             modules={[Navigation, Pagination, Autoplay, EffectFade]}
             spaceBetween={80}
