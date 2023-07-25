@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import bgImage from "../assets/section-bg-4.jpg";
 import { FaRegLightbulb, FaRegCreditCard } from "react-icons/fa";
 import { RiDownloadCloud2Line } from "react-icons/ri";
@@ -49,19 +49,11 @@ const cards = [
 const Service = () => {
   return (
     <div className=" ">
-      {/* <div className=" bg-about-main bg-cover bg-center h-[200px] md:h-[499px] w-auto relative">
-        <div className=" md:w-full max-w-[500px]  h-full  flex flex-col justify-center  md:max-w-[1180px] mx-auto px-[30px]">
-          <p className=" h-1 font-bold text-3xl md:text-6xl  text-white">
-            Services We Provide
-          </p>
-          <p className=" h-1 font-bold text-lg md:text-2xl  text-white">
-            A small river named Duden flows by their place.
-          </p>
-        </div>
-      </div> */}
       <div
         className=" h-[342.19px] md:h-[350.39px] lg:h-[448.38px] bg-cover  bg-no-repeat bg-center "
-        style={{ backgroundImage: `url(${bgImage})` }}
+        style={{
+          backgroundImage: `url(${bgImage})`,
+        }}
       >
         <div
           id="one"
@@ -77,8 +69,6 @@ const Service = () => {
           </div>
         </div>
       </div>
-      {/* md:w-full max-w-[500px]    md:max-w-[1180px] mx-auto mb-[50px] mt-10 px-[30px] */}
-      {/* */}
       <div className=" ">
         <div className=" lg:h-[500.238px] grid grid-cols-1 md:grid-cols-2 relative ">
           <Parallax
@@ -87,7 +77,7 @@ const Service = () => {
           >
             <div className="w-full  md:h-[925px] lg:h-[900.238px]"></div>
           </Parallax>
-          <div className="  max-w-[600px] my-auto px-[30px] ">
+          <div className=" max-w-[500px] md:max-w-[600px] mx-auto md:mx-0 my-auto px-[30px] ">
             <div className="wow animate__fadeInRight">
               <p className=" text-lg font-normal text-gray-500 mb-5">
                 Our Story
@@ -108,7 +98,7 @@ const Service = () => {
         </div>
 
         <div className=" lg:h-[500.238px] grid grid-cols-1 md:grid-cols-2 relative overflow-hidden">
-          <div className="  max-w-[600px] my-auto px-[30px] ml-auto ">
+          <div className=" max-w-[500px] md:max-w-[600px] mx-auto md:mx-0 pt-[50px] md:pt-0 my-auto px-[30px] ml-auto ">
             <div className="wow animate__fadeInLeft">
               <p className=" text-lg font-normal text-gray-500 mb-5">
                 Philosophy
@@ -142,7 +132,7 @@ const Service = () => {
           >
             <div className="w-full  md:h-[925px] lg:h-[900.238px]"></div>
           </Parallax>
-          <div className="  max-w-[600px] my-auto px-[30px] ">
+          <div className="  max-w-[500px] md:max-w-[600px] mx-auto md:mx-0 pt-[50px] md:pt-0 my-auto px-[30px] ">
             <div className="wow animate__fadeInRight">
               <p className=" text-lg font-normal text-gray-500 mb-5">
                 Strategy
