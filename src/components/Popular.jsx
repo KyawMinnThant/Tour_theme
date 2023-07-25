@@ -598,7 +598,7 @@ const Popular = () => {
         </div>
         <div className=" px-5 max-h-[600px] w-full">
           <Swiper
-            modules={[Navigation, Pagination, Autoplay, EffectFade]}
+            modules={[Navigation, Autoplay, EffectFade]}
             spaceBetween={80}
             loop={true}
             navigation
@@ -620,7 +620,6 @@ const Popular = () => {
                 showSwitchArrows: true,
               },
             }}
-            pagination
             autoplay={{
               reverseDirection: false,
               waitForTransition: true,
@@ -639,8 +638,8 @@ const Popular = () => {
             className=" transition-all "
           >
             <div className=" flex w-full">
-              <SwiperSlide className=" md:w-[45%] lg:w-[30%]">
-                <div className=" shadow-md bg-white w-full md:h-[380px]   lg:h-[410px] ">
+              <SwiperSlide className=" md:w-[50%] lg:w-[45%] md:h-[450px] lg:h-[4305x] ">
+                <div className=" shadow-md bg-white w-full h-full ">
                   <div className="">
                     <img src=" https://a6e8z9v6.stackpathcdn.com/traveltour/wp-content/uploads/2017/01/shutterstock_120562819-700x450.jpg" />
                   </div>
@@ -673,8 +672,8 @@ const Popular = () => {
                 </div>
               </SwiperSlide>
 
-              <SwiperSlide className=" md:w-[45%] lg:w-[30%]">
-                <div className="shadow-md bg-white w-full  md:h-[380px]   lg:h-[410px]">
+              <SwiperSlide className=" md:w-[50%] lg:w-[45%] md:h-[450px]   lg:h-[450px]">
+                <div className="shadow-md bg-white w-full  h-full">
                   <img src=" https://a6e8z9v6.stackpathcdn.com/traveltour/wp-content/uploads/2017/01/shutterstock_151616084-700x450.jpg" />
                   <div className=" px-6 pt-8 pb-2">
                     <div className=" flex justify-between">
@@ -707,8 +706,8 @@ const Popular = () => {
                 </div>
               </SwiperSlide>
 
-              <SwiperSlide className=" md:w-[45%] lg:w-[30%]">
-                <div className="shadow-md bg-white w-full  md:h-[380px]   lg:h-[410px]">
+              <SwiperSlide className=" md:w-[50%] lg:w-[45%] md:h-[450px]   lg:h-[450px]">
+                <div className="shadow-md bg-white w-full  h-full">
                   <img src=" https://a6e8z9v6.stackpathcdn.com/traveltour/wp-content/uploads/2016/06/shutterstock_178807262-700x450.jpg" />
                   <div className=" px-6 pt-8 pb-2">
                     <div className=" flex justify-between">
@@ -744,8 +743,8 @@ const Popular = () => {
                 </div>
               </SwiperSlide>
 
-              <SwiperSlide className=" md:w-[45%] lg:w-[30%]">
-                <div className="shadow-md bg-white w-full  md:h-[380px]   lg:h-[410px]">
+              <SwiperSlide className=" md:w-[50%] lg:w-[45%] md:h-[450px]   lg:h-[450px]">
+                <div className="shadow-md bg-white w-full  h-full">
                   <img src=" https://a6e8z9v6.stackpathcdn.com/traveltour/wp-content/uploads/2016/06/shutterstock_245507692-700x450.jpg" />
                   <div className="px-6 pt-8 pb-2">
                     <div className=" flex justify-between">
@@ -781,8 +780,8 @@ const Popular = () => {
                 </div>
               </SwiperSlide>
 
-              <SwiperSlide className=" md:w-[45%] lg:w-[30%]">
-                <div className="shadow-md bg-white w-full  md:h-[380px]   lg:h-[410px]">
+              <SwiperSlide className=" md:w-[50%] lg:w-[45%] md:h-[450px]   lg:h-[450px]">
+                <div className="shadow-md bg-white w-full  h-full">
                   <img src=" https://a6e8z9v6.stackpathcdn.com/traveltour/wp-content/uploads/2016/06/photo-1459255418679-d6424da9ee33-700x450.jpg" />
                   <div className="px-6 pt-8 pb-2">
                     <div className="flex justify-between">
@@ -813,8 +812,8 @@ const Popular = () => {
                 </div>
               </SwiperSlide>
 
-              <SwiperSlide className=" md:w-[45%] lg:w-[30%]">
-                <div className="shadow-md bg-white w-full  md:h-[380px]   lg:h-[410px]">
+              <SwiperSlide className=" md:w-[50%] lg:w-[45%] md:h-[450px]   lg:h-[450px]">
+                <div className="shadow-md bg-white w-full  h-full">
                   <img src="https://a6e8z9v6.stackpathcdn.com/traveltour/wp-content/uploads/2016/06/shutterstock_147744218-700x450.jpg" />
                   <div className="px-6 pt-8 pb-2">
                     <div className=" flex justify-between">
@@ -847,8 +846,8 @@ const Popular = () => {
                 </div>
               </SwiperSlide>
 
-              <SwiperSlide className=" md:w-[45%] lg:w-[30%]">
-                <div className="shadow-md bg-white w-full  md:h-[380px]   lg:h-[410px]">
+              <SwiperSlide className=" md:w-[50%] lg:w-[45%] md:h-[450px]   lg:h-[450px]">
+                <div className="shadow-md bg-white w-full  h-full">
                   <img src=" https://a6e8z9v6.stackpathcdn.com/traveltour/wp-content/uploads/2016/06/shutterstock_136984760-700x450.jpg" />
                   <div className=" px-6 pt-8 pb-2">
                     <div className=" flex justify-between">
